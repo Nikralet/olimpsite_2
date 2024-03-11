@@ -1,0 +1,38 @@
+@font-face {
+       font-family: 'FoglihtenNo06';
+       font-style: normal;
+        src:
+            url('../../fonts/FoglihtenNo06.woff2') format('woff2'),
+            url('../../fonts/FoglihtenNo06.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+/* настройка цвета, прозрачности, размытости navbar */
+.navbar {
+    backdrop-filter: blur(1.6842rem);
+    background-color: rgb(39 33 61 / 40%) !important;
+    max-width: 85%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.842rem;
+}
+
+
+
+body {
+    background: url("../img/wallpaper.jpg") no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding-top: 56px;
+    font-size: 20px;
+}
+
+#logotype {
+    font-family: 'FoglihtenNo06';
+    font-size: larger
+}
