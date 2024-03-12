@@ -1,6 +1,9 @@
+from datetime import datetime
+
 from django.db import models
-import datetime
+
 from products.models import Product
+
 from users.models import User
 
 from phonenumber_field.modelfields import PhoneNumberField
@@ -20,8 +23,7 @@ class OrderitemQueryset(models.QuerySet):
 class Order(models.Model):
     user = models.ForeignKey(to=User, on_delete=models.SET_DEFAULT, blank=True, null=True, verbose_name="Пользователь",
                              default='admin')
-    created_timestamp = models.DateTimeField(default=datetime.datetime.fromtimestamp(100000, datetime.timezone.utc),
-                                             verbose_name="Дата создания заказа")
+    created_timestamp = models.DateTimeField(default=datetime.now, verbose_name="Дата создания заказа")
     delivery_datetime = models.DateTimeField(null=True, verbose_name="Дата-время доставки")
     phone_number = PhoneNumberField(blank=True, verbose_name="Номер телефона")
     requires_delivery = models.BooleanField(default=False, verbose_name="Требуется доставка")
