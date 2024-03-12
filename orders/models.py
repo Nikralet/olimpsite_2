@@ -1,4 +1,6 @@
 from django.db import models
+from django.utils import timezone
+
 from products.models import Product
 
 from users.models import User
@@ -20,8 +22,8 @@ class OrderitemQueryset(models.QuerySet):
 class Order(models.Model):
     user = models.ForeignKey(to=User, on_delete=models.SET_DEFAULT, blank=True, null=True, verbose_name="Пользователь",
                              default='admin')
-    created_timestamp = models.DateTimeField(auto_now_add=True, verbose_name="Дата создания заказа")
-    delivery_datetime = models.DateTimeField(null=True, verbose_name="Дата-время доставки")
+    created_timestamp = models.DateTimeField(default=timezone.now, verbose_name="Дата создания заказа")
+    delivery_datetime = models.DateTimeField(null=True, default=timezone.now, verbose_name="Дата-время доставки")
     phone_number = PhoneNumberField(blank=True, verbose_name="Номер телефона")
     requires_delivery = models.BooleanField(default=False, verbose_name="Требуется доставка")
     delivery_address = models.TextField(null=True, blank=True, verbose_name="Адрес доставки")
