@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db import transaction
@@ -31,11 +33,11 @@ def create_order(request):
                             user=user,
                             phone_number=form.cleaned_data['phone_number'],
                             requires_delivery=form.cleaned_data['requires_delivery'],
-                            delivery_time=form.cleaned_data['delivery_time'],
-                            delivery_date=form.cleaned_data['delivery_date'],
                             delivery_address=form.cleaned_data['delivery_address'],
                             payment_on_get=form.cleaned_data['payment_on_get'],
                             deduct_points=form.cleaned_data['deduct_points'],
+                            delivery_datetime=datetime.combine(form.cleaned_data['delivery_date'],
+                                                               form.cleaned_data['delivery_time'])
                         )
 
                         # Создать заказанные товары
@@ -54,7 +56,7 @@ def create_order(request):
                                 quantity=quantity,
                                 weight=weight,
                             )
-                            product.quantity -= quantity
+
                             product.save()
 
                         if int(order.deduct_points) == 0:

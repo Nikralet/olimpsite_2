@@ -67,8 +67,7 @@ class OrderAdmin(admin.ModelAdmin):
         "payment_on_get",
         "is_paid",
         "created_timestamp",
-        "delivery_time",
-        "delivery_date",
+        "delivery_datetime",
     )
 
     search_fields = (

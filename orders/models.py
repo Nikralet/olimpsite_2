@@ -21,8 +21,7 @@ class Order(models.Model):
     user = models.ForeignKey(to=User, on_delete=models.SET_DEFAULT, blank=True, null=True, verbose_name="Пользователь",
                              default='admin')
     created_timestamp = models.DateTimeField(auto_now_add=True, verbose_name="Дата создания заказа")
-    delivery_time = models.TimeField(verbose_name="Время доставки")
-    delivery_date = models.DateField(verbose_name="Дата доставки")
+    delivery_datetime = models.DateTimeField(null=True, verbose_name="Дата-время доставки")
     phone_number = PhoneNumberField(blank=True, verbose_name="Номер телефона")
     requires_delivery = models.BooleanField(default=False, verbose_name="Требуется доставка")
     delivery_address = models.TextField(null=True, blank=True, verbose_name="Адрес доставки")
