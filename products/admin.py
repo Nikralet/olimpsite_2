@@ -7,7 +7,7 @@ from products.models import ProductCategory, Product, Basket
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('name', 'price', 'weight', 'category', 'on_or_off'  )
+    list_display = ('name', 'price', 'weight', 'category', 'on_or_off',)
     search_fields = ('name',)
     ordering = ('name',)
     prepopulated_fields = {"slug": ("name", )}
