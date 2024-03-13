@@ -39,7 +39,6 @@ def create_order(request):
                             delivery_datetime=datetime.combine(form.cleaned_data['delivery_date'],
                                                                form.cleaned_data['delivery_time'])
                         )
-                        print(order.requires_delivery)
                         # Создать заказанные товары
                         for basket_item in basket_items:
                             product = basket_item.product
