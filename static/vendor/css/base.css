@@ -34,5 +34,5 @@ body {
 
 #logotype {
     font-family: 'FoglihtenNo06';
-    font-size: larger
+    font-size: clamp( 1.1rem, 5vw, 3vh)
 }
