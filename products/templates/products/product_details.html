@@ -1,0 +1,17 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header mx-auto d-flex flex-column">
+            <img class="card-img-top" src="{{ product.image.url }}">
+            <h1 class="modal-title fs-3" id="exampleModalLabel">{{ product.name }}</h1>
+        </div>
+        <div class="modal-body">
+            <h5 class="text-center">Цена {{product.price}} рублей за {{product.weight}} грамм</h5>
+            <h4>Состав:</h4>
+            <h5>{{ product.description }}</h5>
+        </div>
+
+    </div>
+    <div class="modal-footer border-0">
+        <button type="button" id="button-close" class="btn btn-secondary btn-lg " data-bs-dismiss="modal">Закрыть</button>
+    </div>
+</div>

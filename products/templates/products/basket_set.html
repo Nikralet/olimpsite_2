@@ -1,0 +1,85 @@
+{% load order_dop %}
+{% if baskets %}
+<a>&nbsp;</a>
+<div class="d-flex flex-row">
+
+                    <h4 class="mt-3 mb-3 d-flex justify-content-between align-items-center">
+                        Корзина
+                    </h4>
+                    <a>&nbsp;</a>
+                    <h4 class="mt-3 mb-3 d-flex justify-content-between align-items-center  float-right">
+                        Всего баллов: {% viewing_points user=request.user%}
+                    </h4>
+</div>
+                    {% for basket in baskets %}
+
+                            <div class="card mb-3 border-dark" >
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ basket.product.name }}</h5>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-light">
+                                        <div class="row text-center input-group">
+
+                                            <div class="col-lg-3">
+                                                <div class="d-flex flex-row bd-highlight mb-6">
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-primary btn-sm decrement" data-basket-id="{{ basket.id }}" data-basket-change-url="{% url 'products:basket_change' %}">{% csrf_token %} -</button>
+                                                    </span>
+                                                    <input type="text" class="form-control number" value="{{ basket.quantity }}" readonly>
+                                                    <span class="input-group-btn">
+                                                        <button type="button" class="btn btn-primary btn-sm increment" data-basket-id="{{ basket.id }}" data-basket-change-url="{% url 'products:basket_change' %}">{% csrf_token %} +</button>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3">{{ basket.sum_price }} руб.</div>
+                                            <div class="col-lg-3">{{ basket.sum_weight }} гр.</div>
+                                            <div class="col-lg-3">
+
+                                                <a href="{% url 'products:basket_remove' %}" class="remove-from-basket" data-basket-id="{{ basket.id }}">
+                                                    {% csrf_token %}
+                                                    <i class="fas fa-trash"></i>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                    {% endfor %}
+
+                        <div class="card border-dark mb-3">
+                            <div class="card-body d-flex flex-row">
+                                <h4 class="float-left">Предварительный итог</h4>
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="d-flex flex-row">
+                                    <h4 class="float-right">{% basket_total_sum_price user=request.user %} руб.</h4>
+                                    <a>&nbsp;</a>
+                                    <a>&nbsp;</a>
+                                    <h4 class="float-right">{% basket_total_sum_weight user=request.user %} гр.</h4>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <a type="button" class="btn btn-success btn-lg float-right" data-product-id="{{product.id}}" href="{% url 'orders:create_order' %}">
+                            Перейти к оформлению
+                            {% csrf_token %}
+                        </a>
+
+{% else %}
+    <h1>&nbsp;</h1>
+    <h1 class="mt-3 mb-3 text-center" id="basket_void">
+                Корзина пуста <i class="fas fa-frown" aria-hidden="True"></i>
+    </h1>
+        <div class="col text-center">
+                <a type="button" class="btn btn-primary btn-lg" id="start-purchase-link" href="{% url 'products:index' %}">
+                        Закажите из меню !
+                </a>
+        </div>
+
+{% endif %}

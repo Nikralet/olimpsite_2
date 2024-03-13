@@ -1,0 +1,9 @@
+{% load order_dop %}
+
+    <h4 class="float-right">{% basket_total_sum_price2 user=request.user %} руб.</h4>
+    <a>&nbsp;</a>
+    <a>&nbsp;</a>
+    <h4 class="float-right">{% basket_total_sum_weight user=request.user %} гр.</h4>
+    <a>&nbsp;</a>
+    <a>&nbsp;</a>
+    <h4 class="float-right"> Баллов начислиться: {% accrual_of_points2 user=request.user %}</h4>

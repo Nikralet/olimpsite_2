@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% extends 'products/base.html' %}
+{% load static %}
+
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'vendor/css/basket.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- Page Content -->
+<h1>&nbsp;</h1>
+<div class="container">
+
+    <div id="jq-notification"
+         class="position-fixed start-50 translate-middle-x z-3 alert alert-success fade show custom-shadow"
+         style="display: none;" role="alert">
+    </div>
+
+    <div class="col-lg-6" id="collgate">
+
+        <div class="container" id="basket-items-container">
+
+            {% include "products/basket_set.html" %}
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
