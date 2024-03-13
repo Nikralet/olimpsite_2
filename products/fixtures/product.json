@@ -1,1 +1,0 @@
-[{"model": "products.product", "pk": 1, "fields": {"name": "Тестовый шашлык", "description": "Супер тестовый шашлык", "price": "1000.00", "weight": "100.00", "quantity": 100, "image": "products_images/slide-1.jpg", "category": 1}}]
