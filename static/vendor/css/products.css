@@ -1,13 +1,4 @@
 /* настройка цвета, прозрачности, размытости navbar */
-.navbar {
-    backdrop-filter: blur(1.6842rem);
-    background-color: rgb(39 33 61 / 40%) !important;
-    max-width: 85%;
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 0.842rem;
-}
 
 body {
     background: url("../img/wallpaper.jpg") no-repeat center top fixed;
