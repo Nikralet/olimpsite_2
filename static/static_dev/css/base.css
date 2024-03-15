@@ -2,8 +2,8 @@
        font-family: 'FoglihtenNo06';
        font-style: normal;
         src:
-            url('../../fonts/FoglihtenNo06.woff2') format('woff2'),
-            url('../../fonts/FoglihtenNo06.woff') format('woff');
+            url('../fonts/FoglihtenNo06.woff2') format('woff2'),
+            url('../fonts/FoglihtenNo06.woff') format('woff');
         font-weight: normal;
         font-style: normal;
         font-display: swap;
