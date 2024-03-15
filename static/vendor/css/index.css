@@ -2,8 +2,8 @@
        font-family: 'Molot';
        font-style: normal;
         src:
-            url('../../fonts/Molot.woff2') format('woff2'),
-            url('../../fonts/Molot.woff') format('woff');
+            url('../../vendor/fonts/Molot.woff2') format('woff2'),
+            url('../../vendor/fonts/Molot.woff') format('woff');
         font-weight: normal;
         font-style: normal;
         font-display: swap;
