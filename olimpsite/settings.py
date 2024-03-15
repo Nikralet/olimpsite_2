@@ -121,17 +121,20 @@ USE_I18N = True
 
 USE_TZ = True
 
+try:
+    from .settings_prod import *
+except:
+    pass
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
+
 STATIC_URL = '/static/'
-if DEBUG:
-    STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, "static", "static_dev"),
-    )
-if not DEBUG:
-    STATIC_ROOT = os.path.join(BASE_DIR, "static", "static_prod")
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static", "static_dev"),
+)
+STATIC_ROOT = os.path.join(BASE_DIR, "static", "static_prod")
 
 MEDIA_URL = '/media/'
 
@@ -149,8 +152,3 @@ LOGIN_URL = '/users/login/'
 
 PHONENUMBER_DB_FORMAT = 'NATIONAL'
 PHONENUMBER_DEFAULT_REGION = 'RU'
-
-try:
-    from .settings_prod import *
-except:
-    pass
