@@ -1,0 +1,42 @@
+@font-face {
+       font-family: 'Molot';
+       font-style: normal;
+        src:
+            url('../fonts/Molot.woff2') format('woff2'),
+            url('../fonts/Molot.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+
+
+
+/* цвет кнопки ЗАКАЗАТЬ на главном экране */
+#start-purchase-btn {
+
+
+}
+
+/* цвет текста в кнопке заказать */
+#start-purchase-link {
+    font-family: 'Molot';
+    text-decoration: none;
+    color: white;
+}
+
+ /* рекламный текст на главной странице */
+#Advertising-text {
+    font-family: 'Molot';
+    text-decoration: none;
+    color: rgb(245 255 250 / 100%) !important;
+    font-size: 28px;
+}
+
+#carouselExampleAutoplaying {
+      border: 0.5rem outset rgba(25, 25, 112, .3);
+      border-radius: 12px;
+      max-width: 1000px;
+      margin: 0 auto;
+      margin-top: 0%;
+}
