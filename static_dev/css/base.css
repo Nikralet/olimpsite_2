@@ -7,12 +7,13 @@
         font-weight: normal;
         font-style: normal;
         font-display: swap;
+
     }
 
 /* настройка цвета, прозрачности, размытости navbar */
 .navbar {
-    backdrop-filter: blur(1.6842rem);
-    background-color: rgb(39 33 61 / 40%) !important;
+    backdrop-filter: blur(1rem);
+    background-color: rgb(141 110 82 / 40%) !important;
     max-width: 85%;
     margin-top: 1rem;
     margin-left: auto;
@@ -35,4 +36,81 @@ body {
 #logotype {
     font-family: 'FoglihtenNo06';
     font-size: clamp( 1.1rem, 5vw, 3vh)
+
 }
+
+#button_1, #button_2, #button_3, #button_4 {
+    text-decoration: none;
+}
+
+#button_1::before {
+    content: "";
+  position: relative;
+  display: block;
+  height: 3px;
+  bottom: -40px;
+  left: 0;
+  background-color: #FFFFFF;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+
+#button_2::before {
+    content: "";
+  position: relative;
+  display: block;
+  height: 3px;
+  bottom: -40px;
+  left: 0;
+  background-color: #FFFFFF;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+
+#button_3::before {
+    content: "";
+  position: relative;
+  display: block;
+  height: 3px;
+  bottom: -40px;
+  left: 0;
+  background-color: #FFFFFF;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+
+#button_4::before {
+    content: "";
+  position: relative;
+  display: block;
+  height: 3px;
+  bottom: -40px;
+  left: 0;
+  background-color: #FFFFFF;
+  transform: scaleX(0);
+  transition: transform 0.2s ease;
+}
+
+
+#button_1:hover::before {
+  transform: scaleX(1);
+}
+
+#button_2:hover::before {
+  transform: scaleX(1);
+}
+
+#button_3:hover::before {
+  transform: scaleX(1);
+}
+
+#button_4:hover::before {
+  transform: scaleX(1);
+}
+
+@media (min-width:320px) { .navbar { max-width: 96%; } #button_1::before {width: 80px;} #button_2::before {width: 80px;}  #button_3::before {width: 120px;} #button_4::before {width: 40px;}}
+@media (min-width:481px) { .navbar { max-width: 85%; } #button_1::before {width: 80px;} #button_2::before {width: 80px;}  #button_3::before {width: 120px;} #button_4::before {width: 40px;}}
+@media (min-width:641px) { .navbar { max-width: 85%; } #button_1::before {width: 80px;} #button_2::before {width: 80px;}  #button_3::before {width: 120px;} #button_4::before {width: 40px;}}
+@media (min-width:961px) { .navbar { max-width: 85%; } #button_1::before {width: 80px;} #button_2::before {width: 80px;}  #button_3::before {width: 120px;} #button_4::before {width: 40px;}}
+@media (min-width:1025px) { .navbar { max-width: 85%; } #button_1::before {width: 80px;} #button_2::before {width: 80px;}  #button_3::before {width: 120px;} #button_4::before {width: 40px;}}
+@media (min-width:1281px) { .navbar { max-width: 85%; } #button_1::before {width: 80px;} #button_2::before {width: 80px;}  #button_3::before {width: 120px;} #button_4::before {width: 40px;}}

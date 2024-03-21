@@ -5,7 +5,7 @@
        margin-right: auto;
        max-width: 90%;
     backdrop-filter: blur(0.2rem);
-    background-color: rgb(230 230 250 / 25%) !important;
+    background-color: rgb(141 110 82 / 25%) !important;
 
 }
 
@@ -32,3 +32,26 @@ p {
   font-weight: bold;
 
 }
+
+.hr_1 {
+    margin: 20px 0;
+	padding: 0;
+	height: 0;
+	border: none;
+	border-top: 2px dashed #000000;
+}
+.hr_2 {
+    margin: 20px 0;
+	padding: 0;
+	height: 0;
+	border: none;
+	border-top: 2px dashed #000000;
+}
+
+
+@media (min-width:320px) {.hr_2 {display:none;}}
+@media (min-width:481px) {.hr_1 {display:none;}}
+@media (min-width:641px) {.hr_1 {display:none;}}
+@media (min-width:961px) {.hr_1 {display:none;} .hr_2 {display:none;}}
+@media (min-width:1025px) {.hr_1 {display:none;} .hr_2 {display:none;}}
+@media (min-width:1281px) {.hr_1 {display:none;} .hr_2 {display:none;}}

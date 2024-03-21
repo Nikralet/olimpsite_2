@@ -45,20 +45,20 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'we' %}">
+                <li class="nav-item" id="button_1">
+                    <a class="nav-link active" href="{% url 'we' %}">
                         О нас <i class="fa fa-heart" aria-hidden="True"></i>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'products:index' %}">
+                <li class="nav-item" id="button_2">
+                    <a class="nav-link active" href="{% url 'products:index' %}">
                         Меню
                         <i class="fa fa-book" aria-hidden="True"></i>
                     </a>
                 </li>
                 {% if user.is_authenticated %}
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'basket' %}">
+                <li class="nav-item" id="button_3">
+                    <a class="nav-link active" href="{% url 'basket' %}">
                         Корзина
                         <span id="goods-in-basket-count">{% basket_quantity user=request.user %}</span>
                         <i class="fa fa-shopping-basket" aria-hidden="True"></i>
@@ -66,8 +66,8 @@
                     </a>
                 </li>
 <!--выпадающее меню-->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                <li class="nav-item  dropdown" id="button_4">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fas fa-user-circle"></i>
                     </a>
