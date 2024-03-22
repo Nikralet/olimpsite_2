@@ -31,6 +31,12 @@
 }
 
 .btn-primary {
+    background-color: rgb(128 0 0) !important;
+    border-color: rgb(128 0 0) !important;
+}
+.btn-primary:hover {
+    background-color: rgb(103 0 0) !important;
+    border-color: rgb(103 0 0) !important;
 }
 
  /* рекламный текст на главной странице */
@@ -70,9 +76,9 @@
     max-width: 80%;
 }
 
-@media (min-width:320px) {#Advertising-text {font-size: 20px; margin-top: 1rem;} #container_1 { display:none; } #container_2 {max-width: 100%;}}
-@media (min-width:481px) {#Advertising-text {font-size: 20px; margin-top: 1rem;} #container_1 { display:none; } #container_2 {max-width: 90%;}}
-@media (min-width:641px) {#Advertising-text {font-size: 30px; margin-top: 1rem;} #container_1 { display:none; } #container_2 {max-width: 90%;}}
-@media (min-width:961px) {#Advertising-text {font-size: 40px; margin-top: 1rem;} #container_1 { display:none; } #container_2 {max-width: 85%;}}
-@media (min-width:1025px) {#Advertising-text {font-size: 32px; margin-top: 2rem;} #container_2 { display:none; } #container_1 { display:contents; } .card {max-width: 85%;}}
-@media (min-width:1281px) { #Advertising-text {font-size: 40px; margin-top: 2rem;} #container_2 { display:none; } #container_1 { display:contents; } .card {max-width: 80%;}}
+@media screen and (min-width:320px) {#Advertising-text {font-size: 20px; margin-top: 1rem;} #container_1 { display:none; } #container_2 {max-width: 100%;}}
+@media screen and (min-width:481px) {#Advertising-text {font-size: 20px; margin-top: 1rem;} #container_1 { display:none; } #container_2 {max-width: 90%;}}
+@media screen and (min-width:641px) {#Advertising-text {font-size: 30px; margin-top: 1rem;} #container_1 { display:none; } #container_2 {max-width: 90%;}}
+@media screen and (min-width:961px) {#Advertising-text {font-size: 40px; margin-top: 1rem;} #container_1 { display:none; } #container_2 {max-width: 85%;}}
+@media screen and (min-width:1025px) {#Advertising-text {font-size: 32px; margin-top: 2rem;} #container_2 { display:none; } #container_1 { display:contents; } .card {max-width: 85%;}}
+@media screen and (min-width:1281px) { #Advertising-text {font-size: 40px; margin-top: 2rem;} #container_2 { display:none; } #container_1 { display:contents; } .card {max-width: 80%;}}

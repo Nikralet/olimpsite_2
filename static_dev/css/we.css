@@ -47,11 +47,18 @@ p {
 	border: none;
 	border-top: 2px dashed #000000;
 }
+.hr_3 {
+    margin: 20px 0;
+	padding: 0;
+	height: 0;
+	border: none;
+	border-top: 2px dashed #000000;
+}
 
 
-@media (min-width:320px) {.hr_2 {display:none;}}
-@media (min-width:481px) {.hr_1 {display:none;}}
-@media (min-width:641px) {.hr_1 {display:none;}}
-@media (min-width:961px) {.hr_1 {display:none;} .hr_2 {display:none;}}
-@media (min-width:1025px) {.hr_1 {display:none;} .hr_2 {display:none;}}
-@media (min-width:1281px) {.hr_1 {display:none;} .hr_2 {display:none;}}
+@media screen and (max-width:381px) {.hr_2 {display:none;} .hr_3 {display:none;}}
+@media screen and (min-width:381px) {.hr_1 {display:none;} .hr_2 {display:block;} .hr_3 {display:block;}}
+@media screen and (min-width:383px) {.hr_3 {display:none;}}
+@media screen and (min-width:542px) {.hr_2 {display:none;}}
+@media screen and (min-width:576px) {.hr_2 {display:block;}}
+@media screen and (min-width:768px) {.hr_2 {display:none;}}
