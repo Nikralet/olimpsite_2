@@ -38,21 +38,19 @@
                 <h1>В этой категории либо нет блюд, либо они закончились</h1>
             </div>
             {% else %}
+            <div id="jq-notification"
+                 class="position-fixed start-50 translate-middle-x z-3 alert alert-success fade show custom-shadow"
+                 style="display: none;" role="alert">
+            </div>
+            <div id="jq-notification-warning"
+                 class="position-fixed start-50 translate-middle-x z-3 alert alert-warning fade show custom-shadow"
+                 style="display: none;" role="alert">
+            </div>
             <div class="row">
                 {% for product in products %}
 
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-100">
-                        <div id="jq-notification"
-                             class="position-fixed start-50 translate-middle-x z-3 alert alert-success fade show custom-shadow"
-                             style="display: none;" role="alert">
-
-                        </div>
-                        <div id="jq-notification-warning"
-                             class="position-fixed start-50 translate-middle-x z-3 alert alert-warning fade show custom-shadow"
-                             style="display: none;" role="alert">
-
-                        </div>
                         <a>
                             <img class="card-img-top" src="{{ product.image.url }}" alt="">
                         </a>
