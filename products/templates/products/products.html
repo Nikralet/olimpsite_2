@@ -13,14 +13,22 @@
     <h1>&nbsp;</h1>
     <div class="row">
         <div class="col-lg-2">
+            <div class="dropdown card text-center " data-bs-theme="dark" id="dropdown_1">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        <i id="filters_1">Фильтры </i><i class="fa fa-sliders"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" id="dropdown_menu_1">
+                    <li>
+                        <div class="list-group">
 
-            <div class="list-group">
-
-                {% for category in categoryes %}
-                <a href="{% url 'products:category' category.id %}" class="list-group-item">{{ category.name }}</a>
-                {% endfor %}
+                            {% for category in categoryes %}
+                            <a href="{% url 'products:category' category.id %}" class="list-group-item">{{ category.name }}</a>
+                            {% endfor %}
+                        </div>
+                    </li>
+                </ul>
             </div>
-
         </div>
         <!-- /.col-lg-3 -->
 
@@ -49,29 +57,29 @@
                             <img class="card-img-top" src="{{ product.image.url }}" alt="">
                         </a>
                         <div class="card-body mx-auto">
-                            <h4 class="card-title">
+                            <h4 class="card-title text-center">
                                 <a>{{ product.name }}</a>
                             </h4>
-                            <div class="text-center">
-                                <h5>{{ product.price }} руб. — {{ product.weight }} гр.</h5>
+                            <div class="text-center card-title">
+                                <h5 class>{{ product.price }} руб. — {{ product.weight }} гр.</h5>
                             </div>
                         </div>
                         <div class="card-footer text-center d-flex justify-content-between">
                             {% if user.is_authenticated %}
 
-                            <a class="btn btn-outline-success add-to-basket" href="{% url 'products:basket_add' %}"
+                            <a class="btn btn-success add-to-basket" href="{% url 'products:basket_add' %}"
                                data-product-id="{{product.id}}">
                                 Отправить в корзину
                             </a>
 
                             {% else %}
 
-                            <a class="btn btn-outline-success add-to-basket" href="{% url 'products:basket_none' %}">
+                            <a class="btn btn-success add-to-basket" href="{% url 'products:basket_none' %}">
                                 Отправить в корзину
                             </a>
 
                             {% endif %}
-                            <button type="button" id="modalButton" class="btn btn-outline-primary"
+                            <button type="button" id="modalButton" class="btn btn-primary"
                                     data-product-id="{{product.id}}" href="{% url 'products:product_details' %}">  <!--не трогать href-->
                                 Описание
                             </button>
@@ -97,7 +105,7 @@
                 <li class="page-item {% if not products.has_previous %} disabled {% endif %}">
                     <a class="page-link"
                        href="{% if products.has_previous %} {% url 'products:paginator' products.previous_page_number %} {% else %} # {% endif %}"
-                       tabindex="-1" aria-disabled="true">Предыдущая
+                       tabindex="-1" aria-disabled="true" id="pred">Предыдущая
                     </a>
                 </li>
                 {% for page in products.paginator.page_range %}
@@ -109,7 +117,8 @@
                 {% endfor %}
                 <li class="page-item {% if not products.has_next %} disabled {% endif %}">
                     <a class="page-link"
-                       href="{% if products.has_next %} {% url 'products:paginator' products.next_page_number %} {% else %} # {% endif %}">Следующая
+                       href="{% if products.has_next %} {% url 'products:paginator' products.next_page_number %} {% else %} # {% endif %}"
+                       id="sled">Следующая
                     </a>
                 </li>
             </ul>

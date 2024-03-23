@@ -12,6 +12,7 @@
 
 /* настройка цвета, прозрачности, размытости navbar */
 .navbar {
+    z-index: 9998;
     backdrop-filter: blur(1rem);
     background-color: rgb(141 110 82 / 40%) !important;
     max-width: 85%;
