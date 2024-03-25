@@ -148,7 +148,7 @@ def basket_change(request):
     basket.save()
 
     basket = get_user_baskets(request)
-    print(type(basket))
+    #print(type(basket))
     basket_items_html = render_to_string(
         "products/basket_set.html", {"baskets": basket}, request=request)
 

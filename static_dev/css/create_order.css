@@ -1,5 +1,51 @@
 .card {
-    max-width: 100% !important;/*Set your own width %; */
+
     margin-left: auto;
     margin-right: auto;
+        color: #FFF;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    background-color: rgb(141 110 82 / 80%) !important;
+    border-color: rgb(92 57 27 / 30%) !important;
 }
+
+#card_7 {
+    margin-bottom: -0.8rem;
+        background-color: rgb(141 110 82 / 30%) !important;
+    border-color: rgb(92 57 27 / 30%) !important;
+}
+
+#button_6 {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    --bs-btn-padding-x: 38.27%;
+    }
+
+#container_1 {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#card_3 {
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width:320px) {#button_6 {--bs-btn-padding-x: 24.36%;}}
+@media screen and (min-width:360px) {#button_6 {--bs-btn-padding-x: 27.41%;}}
+@media screen and (min-width:375px) {#button_6 {--bs-btn-padding-x: 28.37%;}}
+@media screen and (min-width:390px) {#button_6 {--bs-btn-padding-x: 29.26%;}}
+@media screen and (min-width:412px) {#button_6 {--bs-btn-padding-x: 30.44%;}}
+@media screen and (min-width:414px) {#button_6 {--bs-btn-padding-x: 30.54%;}}
+@media screen and (min-width:425px) {#button_6 {--bs-btn-padding-x: 31.07%;}}
+@media screen and (min-width:540px) {#button_6 {--bs-btn-padding-x: 35.29%;}}
+@media screen and (min-width:768px) {#button_6 {--bs-btn-padding-x: 28.19%;}}
+@media screen and (min-width:1024px) {#button_6 {--bs-btn-padding-x: 33.78%;}}
+@media screen and (min-width:1280px) {#button_6 {--bs-btn-padding-x: 36.39%;}}
+@media screen and (min-width:1440px) {#button_6 {--bs-btn-padding-x: 38.28%;}}

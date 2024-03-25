@@ -24,3 +24,92 @@
     text-decoration: none;
     color: white;
 }
+
+.card {
+    background-color: rgb(141 110 82 / 80%) !important;
+    border-color: rgb(92 57 27 / 100%) !important;
+}
+
+#card_1 {
+        color: #FFF;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    margin-bottom: 1rem;
+}
+
+#card_2 {
+        color: #FFF;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    margin-bottom: 1rem;
+}
+
+h5 {
+    color: #FFF;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.list-group-item {
+        background-color: rgb(141 110 82 / 40%) !important;
+    border-color: rgb(92 57 27 / 100%) !important;
+}
+
+.basket_spw {
+        color: #FFF;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.prov_1 {
+    font-size: 18px;
+    color: #FFF;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    background-color: rgb(141 110 82 / 0%) !important;
+    border-color: rgb(92 57 27 / 30%) !important;
+}
+
+#h4_1 {
+    margin-top: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+#h4_2 {
+    margin-bottom: 1rem;
+    margin-top: 0.6rem;
+}
+
+#button_5 {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+}
+
+.remove-from-basket {
+    color: rgb(128 0 0) !important;
+
+}
+.remove-from-basket:hover {
+    color: rgb(103 0 0) !important;
+}
+
+
+@media screen and (min-width:320px) {.basket_quantity_1 {display:none;} .basket_quantity_2 {display:inline-block;} #quantity{display: inline-block;}}
+
+@media screen and (min-width:992px) {.basket_quantity_2 {display:none;} .basket_quantity_1 {display:inline-block; margin-top:0.5rem;} #quantity{display: flex;}}
