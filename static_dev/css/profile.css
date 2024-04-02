@@ -10093,3 +10093,4 @@ body {
 #card_number_one, #card_number_two {
     margin-top: 120px;
 }
+@media screen and (min-width:481px) { #container_profile { max-width: 85%; }}
