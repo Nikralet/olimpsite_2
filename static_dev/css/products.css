@@ -106,6 +106,6 @@
     background-color: rgb(141 110 82 / 100%) !important;
     border-color: rgb(92 57 27 / 100%) !important;
     .modal-header {
-        border-bottom: 1px solid rgb(92 57 27 / 100%) !important;
+        border-bottom: 1px solid rgb(92 57 27) !important;
     }
 }
