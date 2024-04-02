@@ -106,6 +106,12 @@ body {
 
 #exampleModal {
     z-index: 9999;
+        color: #FFF;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
 
 #modal_content_1 {
@@ -115,17 +121,9 @@ body {
         border-bottom: 1px solid rgb(92 57 27 / 100%) !important;
     }
     color: #FFF;
-}
-
-@media screen and (max-width:381px) {}
-@media screen and (min-width:381px) {}
-@media screen and (min-width:383px) {}
-@media screen and (min-width:542px) {}
-@media screen and (min-width:576px) {}
-@media screen and (min-width:768px) {#modal_content_1 {
-            text-shadow:
+    text-shadow:
         -1px -1px 0 #000,
         1px -1px 0 #000,
         -1px 1px 0 #000,
         1px 1px 0 #000;
-        }}
+}
