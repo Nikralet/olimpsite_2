@@ -122,10 +122,10 @@ body {
 @media screen and (min-width:383px) {}
 @media screen and (min-width:542px) {}
 @media screen and (min-width:576px) {}
-@media screen and (min-width:768px) {
+@media screen and (min-width:768px) {modal_content_1 {
             text-shadow:
         -1px -1px 0 #000,
         1px -1px 0 #000,
         -1px 1px 0 #000,
         1px 1px 0 #000;
-        }
+        }}
