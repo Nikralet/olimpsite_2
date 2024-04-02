@@ -41,7 +41,7 @@ body {
 }
 
 .card-title {
-    color: #FFF !important;
+    color: white !important;
     text-shadow:
         -1px -1px 0 #000,
         1px -1px 0 #000,
@@ -53,7 +53,7 @@ body {
     backdrop-filter: blur(0.2rem);
     border-color: rgb(92 57 27 / 100%) !important;
     background-color: rgb(141 110 82 / 100%) !important;
-        color: #FFF !important;
+        color: white !important;
     text-shadow:
         -1px -1px 0 #000,
         1px -1px 0 #000,
@@ -62,7 +62,7 @@ body {
 }
 
 #filters_1 {
-    color: #FFF !important;
+    color: white !important;
     text-shadow:
         -1px -1px 0 #000,
         1px -1px 0 #000,
@@ -88,7 +88,7 @@ body {
 
 }
 #pred {
-    color: #FFF !important;
+    color: white !important;
     text-shadow:
         -1px -1px 0 #000,
         1px -1px 0 #000,
@@ -96,7 +96,7 @@ body {
         1px 1px 0 #000;
 }
 #sled {
-    color: #FFF !important;
+    color: white !important;
     text-shadow:
         -1px -1px 0 #000,
         1px -1px 0 #000,
@@ -106,7 +106,7 @@ body {
 
 #exampleModal {
     z-index: 9999;
-    color: #FFF !important;
+    color: white !important;
     text-shadow:
         -1px -1px 0 #000,
         1px -1px 0 #000,
