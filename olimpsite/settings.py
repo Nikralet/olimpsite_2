@@ -152,3 +152,5 @@ LOGIN_URL = '/users/login/'
 
 PHONENUMBER_DB_FORMAT = 'NATIONAL'
 PHONENUMBER_DEFAULT_REGION = 'RU'
+
+CSRF_TRUSTED_ORIGINS = ['https://olimp-kstovo.ru', 'https://www.olimp-kstovo.ru']
