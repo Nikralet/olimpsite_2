@@ -1,15 +1,3 @@
-/* настройка цвета, прозрачности, размытости navbar */
-
-body {
-    background: url("../img/wallpaper.jpg") no-repeat center top fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    padding-top: 56px;
-    font-size: 20px;
-}
-
 /* цвет кнопки ЗАКАЗАТЬ на главном экране */
 #start-purchase-btn {
     background-color: #191970 !important;
