@@ -23,6 +23,16 @@ def index(request):
     return render(request, 'products/index.html', context)
 
 
+def yandex_ff79486704445fe2(request):
+    if request.user.is_authenticated:
+        context = {'title': 'Кафе Олимп',
+                   'baskets': Basket.objects.filter(user=request.user),
+                   }
+    else:
+        context = {'title': 'Кафе Олимп'}
+    return render(request, 'products/yandex_ff79486704445fe2.html', context)
+
+
 def we(request):
     if request.user.is_authenticated:
         context = {'title': 'О нас - Кафе Олимп',

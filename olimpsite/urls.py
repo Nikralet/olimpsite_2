@@ -20,7 +20,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-from products.views import index, we, basket
+from products.views import index, we, basket, yandex_ff79486704445fe2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,6 +30,7 @@ urlpatterns = [
     path('orders/', include('orders.urls', namespace='orders')),
     path('we/', we, name='we'),
     path('basket/', basket, name='basket'),
+    path('yandex_ff79486704445fe2/', yandex_ff79486704445fe2, name='yandex_ff79486704445fe2'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
