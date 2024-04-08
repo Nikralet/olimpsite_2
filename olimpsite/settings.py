@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'rangefilter',
 
-    'robokassa',
+#    'robokassa',
 
 
     'products',
