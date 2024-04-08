@@ -8,8 +8,8 @@ from django.http import JsonResponse
 from django.shortcuts import redirect, render
 from django.template.loader import render_to_string
 
-from orders.templatetags.order_dop import adding_points_for_purchases, viewing_points, basket_total_sum_price, \
-    basket_total_sum_price2
+from orders.templatetags.order_dop import viewing_points, basket_total_sum_price, \
+    basket_total_sum_price2, adding_points_for_purchases
 from products.models import Basket, BasketQuerySet
 
 from orders.forms import CreateOrderForm
@@ -65,10 +65,10 @@ def create_order(request):
                             order.total_cost = basket_total_sum_price2(user)
                             order.save()
 
-                        baskets = Basket.objects.filter(user=request.user)
-                        point = User.objects.get(id=request.user.id)
+                        baskets = Basket.objects.filter(user=user)
+                        point = User.objects.get(id=user.id)
                         summing = BasketQuerySet.total_sum_price(baskets)
-                        points = viewing_points(request.user)
+                        points = viewing_points(user)
                         if int(order.deduct_points) == 0:
                             point.loyalty_program = points
                         elif int(order.deduct_points) == 1:
@@ -80,12 +80,17 @@ def create_order(request):
 
                         point.save()
 
+                        if order.payment_on_get == '0':
+
+                            order.is_paid = True
+                            order.save()
+
                         # Очистить корзину пользователя после создания заказа
                         basket_items.delete()
 
                         messages.success(request, 'Заказ оформлен!')
 
-                        return redirect('users:profile')
+                        return redirect('users:history_of_orders')
             except ValidationError as e:
                 messages.success(request, str(e))
                 return redirect('basket:order')

@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'rangefilter',
 
-    #'sberbank',
+    'robokassa',
 
 
     'products',
@@ -152,5 +152,13 @@ LOGIN_URL = '/users/login/'
 
 PHONENUMBER_DB_FORMAT = 'NATIONAL'
 PHONENUMBER_DEFAULT_REGION = 'RU'
+
+# ROBOKASSA_LOGIN = ""
+#
+# ROBOKASSA_PASSWORD1 = ""
+#
+# ROBOKASSA_PASSWORD2 = ""
+#
+# ROBOKASSA_TEST_MODE = True/False
 
 CSRF_TRUSTED_ORIGINS = ['https://olimp-kstovo.ru', 'https://www.olimp-kstovo.ru']
