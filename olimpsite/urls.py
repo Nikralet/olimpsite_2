@@ -31,7 +31,6 @@ urlpatterns = [
     path('we/', we, name='we'),
     path('basket/', basket, name='basket'),
     path('yandex_ff79486704445fe2.html/', yandex_ff79486704445fe2, name='yandex_ff79486704445fe2'),
-    #path('robokassa/', include('robokassa.urls')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

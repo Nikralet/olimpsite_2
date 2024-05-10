@@ -16,14 +16,120 @@ from orders.forms import CreateOrderForm
 from orders.models import Order, OrderItem
 from users.models import User
 
+from django.shortcuts import get_object_or_404, render
+from django.contrib.auth.decorators import login_required
 
+from robokassa.forms import RobokassaForm
+
+import decimal
+import hashlib
+from urllib import parse
+from urllib.parse import urlparse
+import threading
+
+
+def calculate_signature(*args) -> str:
+    """Create signature MD5."""
+    return hashlib.md5(':'.join(str(arg) for arg in args).encode()).hexdigest()
+
+
+def parse_response(request: str) -> dict:
+    """
+    :param request: Link.
+    :return: Dictionary.
+    """
+    params = {}
+
+    for item in urlparse(request).query.split('&'):
+        key, value = item.split('=')
+        params[key] = value
+    return params
+
+
+def check_signature_result(
+    order_number: int,  # invoice number
+    received_sum: decimal,  # cost of goods, RU
+    received_signature: hex,  # SignatureValue
+    password: str  # Merchant password
+) -> bool:
+    signature = calculate_signature(received_sum, order_number, password)
+    #print(signature)
+    if signature.lower() == received_signature.lower():
+        return True
+    return False
+
+
+# Формирование URL переадресации пользователя на оплату.
+
+def generate_payment_link(
+    merchant_login: str,  # Merchant login
+    merchant_password_1: str,  # Merchant password
+    cost: decimal,  # Cost of goods, RU
+    number: int,  # Invoice number
+    description: str,  # Description of the purchase
+    is_test = 1,
+    robokassa_payment_url = 'https://auth.robokassa.ru/Merchant/Index.aspx',
+) -> str:
+    """URL for redirection of the customer to the service.
+    """
+    signature = calculate_signature(
+        merchant_login,
+        cost,
+        number,
+        merchant_password_1
+    )
+
+    data = {
+        'MerchantLogin': merchant_login,
+        'OutSum': cost,
+        'InvId': number,
+        'Description': description,
+        'SignatureValue': signature,
+        'IsTest': is_test
+    }
+    return f'{robokassa_payment_url}?{parse.urlencode(data)}'
+
+
+# Получение уведомления об исполнении операции (ResultURL).
+
+def result_payment(merchant_password_2: str, request: str) -> str:
+    """Verification of notification (ResultURL).
+    :param request: HTTP parameters.
+    """
+    param_request = parse_response(request)
+    cost = param_request['OutSum']
+    number = param_request['InvId']
+    signature = param_request['SignatureValue']
+
+    if check_signature_result(number, cost, signature, merchant_password_2):
+        return f'OK{param_request["InvId"]}'
+    return "bad sign"
+
+
+# Проверка параметров в скрипте завершения операции (SuccessURL).
+
+def check_success_payment(merchant_password_1: str, request: str) -> bool:
+    """ Verification of operation parameters ("cashier check") in SuccessURL script.
+    :param request: HTTP parameters
+    """
+    param_request = parse_response(request)
+    cost = param_request['OutSum']
+    number = param_request['InvId']
+    signature = param_request['SignatureValue']
+
+    if check_signature_result(number, cost, signature, merchant_password_1):
+        return True
+    return False
+
+
+@login_required
 def create_order(request):
     if request.method == 'POST':
         form = CreateOrderForm(data=request.POST)
         if form.is_valid():
             print(form.errors)
             try:
-                with transaction.atomic():
+                with (transaction.atomic()):
                     user = request.user
                     basket_items = Basket.objects.filter(user=user)
 
@@ -81,16 +187,49 @@ def create_order(request):
                         point.save()
 
                         if order.payment_on_get == '0':
+                            urls = generate_payment_link(merchant_login=str('Cafe-Olimp'),
+                                                         merchant_password_1=str('z7Q3USda2lXy2VwOc0Ov'),
+                                                         cost=decimal.Decimal(order.total_cost),
+                                                         number=int(order.id),
+                                                         description=order.phone_number)
 
-                            order.is_paid = True
-                            order.save()
+                            # def finally_one(event1, urls1, order1, count1):
+                            #     while not event1.isSet():
+                            #         event.wait(1)
+                            #         print(count1)
+                            #         print(check_success_payment(merchant_password_1=str('z7Q3USda2lXy2VwOc0Ov'),
+                            #                                     request=urls1))
+                            #         print(result_payment(merchant_password_2=str('GAf8r8tsRS7zSEVMx4R1'),
+                            #                              request=urls1))
+                            #         count1 += 1
+                            #         #print(request.build_absolute_uri())
+                            #         if check_success_payment(merchant_password_1=str('z7Q3USda2lXy2VwOc0Ov'),
+                            #                                  request=urls1
+                            #                                  ):
+                            #             order1.is_paid = True
+                            #             order1.save()
+                            #             print('оплата прошла успешно, баллы списаны')
+                            #             event1.set()
+                            #             #basket_items.delete()
+                            #         if count1 == 500:
+                            #             print('остановил')
+                            #             event1.set()
+                            #             #print(urls1)
+                            #             #return render(request=urls1, template_name='products/basket.html')
+                            # try:
+                            return redirect(urls)
+                            # finally:
+                            #     event = threading.Event()
+                            #     count = 0
+                            #     thread_two = threading.Thread(target=finally_one, args=(event, urls, order, count))
+                            #     thread_two.start()
+                        else:
+                            # Очистить корзину пользователя после создания заказа
+                            basket_items.delete()
 
-                        # Очистить корзину пользователя после создания заказа
-                        basket_items.delete()
+                            messages.success(request, 'Заказ оформлен!')
 
-                        messages.success(request, 'Заказ оформлен!')
-
-                        return redirect('users:history_of_orders')
+                            return redirect('users:history_of_orders')
             except ValidationError as e:
                 messages.success(request, str(e))
                 return redirect('basket:order')

@@ -1,3 +1,6 @@
+import decimal
+import hashlib
+
 from django.shortcuts import render
 
 from django.contrib.auth.decorators import login_required
@@ -13,6 +16,16 @@ from django.template.loader import render_to_string
 from django.core.paginator import Paginator
 
 
+def yandex_ff79486704445fe2(request):  # не трогать штука нужная
+    if request.user.is_authenticated:
+        context = {'title': 'Кафе Олимп',
+                   'baskets': Basket.objects.filter(user=request.user),
+                   }
+    else:
+        context = {'title': 'Кафе Олимп'}
+    return render(request, 'products/yandex_ff79486704445fe2.html', context)
+
+
 def index(request):
     if request.user.is_authenticated:
         context = {'title': 'Кафе Олимп',
@@ -21,16 +34,6 @@ def index(request):
     else:
         context = {'title': 'Кафе Олимп'}
     return render(request, 'products/index.html', context)
-
-
-def yandex_ff79486704445fe2(request):
-    if request.user.is_authenticated:
-        context = {'title': 'Кафе Олимп',
-                   'baskets': Basket.objects.filter(user=request.user),
-                   }
-    else:
-        context = {'title': 'Кафе Олимп'}
-    return render(request, 'products/yandex_ff79486704445fe2.html', context)
 
 
 def we(request):
@@ -44,10 +47,10 @@ def we(request):
 
 
 def basket(request):
-
     context = {'title': 'Корзина - Кафе Олимп',
                'baskets': Basket.objects.filter(user=request.user),
-    }
+               }
+
     return render(request, 'products/basket.html', context)
 
 
@@ -85,6 +88,7 @@ def products(request, category_id=1, page_number=1):
                    }
     return render(request, 'products/products.html', context)
 
+
 @login_required
 def basket_add(request):
 
@@ -118,7 +122,6 @@ def basket_none(request):
 
     response_data = {
         "message": "Зарегистрируйтесь, чтобы добавлять в корзину",
-
     }
 
     return JsonResponse(response_data)

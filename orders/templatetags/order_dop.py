@@ -20,7 +20,7 @@ def basket_total_sum_price(user):
     baskets = Basket.objects.filter(user=user)
     summing = BasketQuerySet.total_sum_price(baskets)
 
-    return summing
+    return decimal.Decimal(summing)
 
 
 @register.simple_tag()
@@ -39,7 +39,7 @@ def basket_total_sum_price2(user):
         new_price = 0
         point.loyalty_program = points - basket_sum_price
 
-    return new_price
+    return decimal.Decimal(new_price)
 
 
 @register.simple_tag()

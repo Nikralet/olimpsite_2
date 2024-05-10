@@ -1,4 +1,5 @@
-
+<!DOCTYPE html>
+<html lang="ru">
 {% extends 'products/base.html' %}
 {% load static %}
 
@@ -10,6 +11,7 @@
 
 
 {% block content %}
+{% csrf_token %}
 <!-- Page Content -->
 <!-- Оформленные заказы -->
 <h1>&nbsp;</h1>
@@ -19,7 +21,10 @@
             <h3 class="text-center mb-4" id="h3_top">Ваши заказы</h3>
             <!-- Разметка заказов -->
         </div>
-
+        <div id="jq-notification"
+             class="position-fixed start-50 translate-middle-x z-3 alert alert-success fade show custom-shadow"
+             style="display: none;" role="alert">
+        </div>
             <div class="accordion" id="accordionExample">
                 {% for order in orders %}
                 <div class="accordion-item">
@@ -27,10 +32,11 @@
                         <button class="accordion-button {% if order != orders.0 %}collapsed{% endif %}" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapse{{ order.id }}" aria-expanded="false"
                             aria-controls="collapse{{ order.id }}">
-                            Заказ № {{ order.id }} - {{ order.created_timestamp }} |
-                            <strong
-                                class="mx-2"> Статус: {{order.status}}
-                            </strong>
+                            Заказ № {{ order.id }} | Дата-время: {{ order.created_timestamp }} |
+                            Способ оплаты: {% if order.payment_on_get == True %} Наличными при получении {% else %} Карта {% endif %} |
+                            Суммарная стоимость: {{order.total_cost}} руб. |
+                            Оплачен: {% if order.is_paid == True %} Да {% else %} Нет {% endif %} |
+                            Статус: {{order.status}}
                         </button>
                     </h2>
                     <div id="collapse{{ order.id }}"
@@ -76,5 +82,9 @@
 </div>
 
 <!-- Закончилась разметка заказов -->
-
+<script src="{% static '/jquery/jquery-3.7.1.min.js' %}"></script>
+<script src="{% static '/js/robokassa_paid_yes_or_not_message.js' %}"></script>
 {% endblock %}
+
+
+</html>

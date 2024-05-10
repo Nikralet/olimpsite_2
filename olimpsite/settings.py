@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'rangefilter',
 
-#    'robokassa',
+    'robokassa',
 
 
     'products',
@@ -153,12 +153,14 @@ LOGIN_URL = '/users/login/'
 PHONENUMBER_DB_FORMAT = 'NATIONAL'
 PHONENUMBER_DEFAULT_REGION = 'RU'
 
-# ROBOKASSA_LOGIN = ""
-#
-# ROBOKASSA_PASSWORD1 = ""
-#
-# ROBOKASSA_PASSWORD2 = ""
-#
-# ROBOKASSA_TEST_MODE = True/False
+ROBOKASSA_LOGIN = "Cafe-Olimp"
+
+ROBOKASSA_PASSWORD1 = "z7Q3USda2lXy2VwOc0Ov"
+
+ROBOKASSA_PASSWORD2 = "GAf8r8tsRS7zSEVMx4R1"
+
+ROBOKASSA_TEST_MODE = True
+
+ROBOKASSA_TEST_FORM_TARGET = ['*']
 
 CSRF_TRUSTED_ORIGINS = ['https://olimp-kstovo.ru', 'https://www.olimp-kstovo.ru']

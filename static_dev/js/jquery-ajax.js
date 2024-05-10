@@ -50,7 +50,6 @@ $(document).ready(function () {
             product_id: product_id,
             csrfmiddlewaretoken: $("[name=csrfmiddlewaretoken]").val(),
         };
-
         // делаем post запрос через ajax не перезагружая страницу
             $.ajax({
                 type: "POST",
@@ -402,9 +401,6 @@ $(document).ready(function () {
 
     var interval = setInterval(function () { myFunction(); }, time_interval * 60 * 1000);
     // тут кончается функция на время заказа, думал будет маленькой, а вышло, это чудо
-
-
-
 
 
 });

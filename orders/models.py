@@ -32,8 +32,9 @@ class Order(models.Model):
     is_paid = models.BooleanField(default=False, verbose_name="Оплачено")
     deduct_points = models.BooleanField(default=False, verbose_name="Баллы списаны")
     is_add = models.BooleanField(default=False, verbose_name="Просто функция, не трогать", editable=False)
-    status = models.CharField(max_length=50, default='В обработке',
-                              choices=[('Создаётся', 'Создаётся'), ('Доставляется', 'Доставляется'), ('Доставлен', 'Доставлен')],
+    status = models.CharField(max_length=50, default='Создаётся',
+                              choices=[('Создаётся', 'Создаётся'), ('Доставляется', 'Доставляется'),
+                                       ('Доставлен', 'Доставлен')],
                               verbose_name="Статус заказа")
     total_cost = models.DecimalField(max_digits=8, default=0, decimal_places=0, verbose_name="Суммарная стоимость")
 

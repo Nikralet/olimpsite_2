@@ -33,7 +33,7 @@ label {
     width: 100%;
 }
 
-#a_reg, #a_pas, #a_avt{
+#a_reg, #a_pas, #a_avt, #loyalty{
                     color: #FFF;
     text-shadow:
         -0.5px -0.5px 0 #000,
