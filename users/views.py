@@ -107,8 +107,8 @@ def robokassa_paid_yes_or_not(request):
     for i in range(len(urls)):
         urls1.append(urls[i].split('='))
     order = Order.objects.get(id=int(urls1[1][1]))
-    #order.is_paid = True
-    #order.save()
+    order.is_paid = True
+    order.save()
     return print('Теперь считаюсь оплаченным')
 
 
@@ -123,26 +123,24 @@ def history_of_orders(request):
     ).order_by("-id")
     context = {'title': 'Кафе Олимп - История заказов',
                'orders': orders}
-    try:
-        if len(url) != 0:
-            urls = url.split('&')
-            urls1 = []
-            for i in range(len(urls)):
-                urls1.append(urls[i].split('='))
 
-            check = check_success_payment(merchant_password_1=str('z7Q3USda2lXy2VwOc0Ov'), number=int(urls1[1][1]),
-                                          cost=decimal.Decimal(urls1[0][1]), signature=str(urls1[2][1]))
-            if check:
-                order = Order.objects.get(id=int(urls1[1][1]))
-                if not order.is_paid:
-                    response_data = {
-                        "message": "Заказ оплачен",
-                    }
-                    try:
-                        return JsonResponse(response_data)
-                    finally:
-                        robokassa_paid_yes_or_not(request)
-    finally:
-        return render(request, 'users/history_of_orders.html', context)
+    if len(url) != 0 and request.method == "POST" and request.accepts("application/json"):
+        urls = url.split('&')
+        urls1 = []
+        for i in range(len(urls)):
+            urls1.append(urls[i].split('='))
 
-
+        check = check_success_payment(merchant_password_1=str('z7Q3USda2lXy2VwOc0Ov'), number=int(urls1[1][1]),
+                                        cost=decimal.Decimal(urls1[0][1]), signature=str(urls1[2][1]))
+        if check:
+            order = Order.objects.get(id=int(urls1[1][1]))
+            if not order.is_paid:
+                response_data = {
+                    "message": "Заказ оплачен",
+                    "yes_or_no": 1,
+                }
+                try:
+                    return JsonResponse(response_data, status=200)
+                finally:
+                    robokassa_paid_yes_or_not(request)
+    return render(request, 'users/history_of_orders.html', context)
