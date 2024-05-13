@@ -109,7 +109,7 @@ def robokassa_paid_yes_or_not(request):
     order = Order.objects.get(id=int(urls1[1][1]))
     order.is_paid = True
     order.save()
-    return print('Теперь считаюсь оплаченным')
+    return
 
 
 @login_required
@@ -130,7 +130,7 @@ def history_of_orders(request):
         for i in range(len(urls)):
             urls1.append(urls[i].split('='))
 
-        check = check_success_payment(merchant_password_1=str('z7Q3USda2lXy2VwOc0Ov'), number=int(urls1[1][1]),
+        check = check_success_payment(merchant_password_1=str('VKH6zCyE5mFL5iv5f8QV'), number=int(urls1[1][1]),
                                         cost=decimal.Decimal(urls1[0][1]), signature=str(urls1[2][1]))
         if check:
             order = Order.objects.get(id=int(urls1[1][1]))

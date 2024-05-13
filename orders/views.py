@@ -1,31 +1,27 @@
 from datetime import datetime
 
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 from django.db import transaction
 from django.forms import ValidationError
 from django.http import JsonResponse
-from django.shortcuts import redirect, render
+from django.shortcuts import redirect
 from django.template.loader import render_to_string
 
 from orders.templatetags.order_dop import viewing_points, basket_total_sum_price, \
-    basket_total_sum_price2, adding_points_for_purchases
+    basket_total_sum_price2
 from products.models import Basket, BasketQuerySet
 
 from orders.forms import CreateOrderForm
 from orders.models import Order, OrderItem
 from users.models import User
 
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
-
-from robokassa.forms import RobokassaForm
 
 import decimal
 import hashlib
 from urllib import parse
 from urllib.parse import urlparse
-import threading
 
 
 def calculate_signature(*args) -> str:
@@ -67,7 +63,7 @@ def generate_payment_link(
     cost: decimal,  # Cost of goods, RU
     number: int,  # Invoice number
     description: str,  # Description of the purchase
-    is_test = 1,
+    is_test = 0,
     robokassa_payment_url = 'https://auth.robokassa.ru/Merchant/Index.aspx',
 ) -> str:
     """URL for redirection of the customer to the service.
@@ -195,7 +191,7 @@ def create_order(request):
                             description = ' Номер заказа: ' + str(order.id) + ';' + ' Время доставки: ' + str(
                                 order.delivery_datetime) + ';' + ' Список покупок: ' + text
                             urls = generate_payment_link(merchant_login=str('Cafe-Olimp'),
-                                                         merchant_password_1=str('z7Q3USda2lXy2VwOc0Ov'),
+                                                         merchant_password_1=str('VKH6zCyE5mFL5iv5f8QV'),
                                                          cost=decimal.Decimal(order.total_cost),
                                                          number=int(order.id),
                                                          description=description)

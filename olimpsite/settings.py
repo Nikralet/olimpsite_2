@@ -41,9 +41,6 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'rangefilter',
 
-    'robokassa',
-
-
     'products',
     'users',
     'orders',
@@ -152,12 +149,6 @@ LOGIN_URL = '/users/login/'
 
 PHONENUMBER_DB_FORMAT = 'NATIONAL'
 PHONENUMBER_DEFAULT_REGION = 'RU'
-
-ROBOKASSA_LOGIN = "Cafe-Olimp"
-
-ROBOKASSA_PASSWORD1 = "z7Q3USda2lXy2VwOc0Ov"
-
-ROBOKASSA_PASSWORD2 = "GAf8r8tsRS7zSEVMx4R1"
 
 ROBOKASSA_TEST_MODE = True
 
