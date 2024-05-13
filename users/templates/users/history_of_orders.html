@@ -32,7 +32,7 @@
                         <button class="accordion-button {% if order != orders.0 %}collapsed{% endif %}" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapse{{ order.id }}" aria-expanded="false"
                             aria-controls="collapse{{ order.id }}">
-                            Заказ № {{ order.id }} | Дата-время: {{ order.created_timestamp }} |
+                            Заказ № {{ order.id }} | Время доставки: {{ order.delivery_datetime }} |
                             Способ оплаты: {% if order.payment_on_get == True %} Наличными при получении {% else %} Карта {% endif %} |
                             Суммарная стоимость: {{order.total_cost}} руб. |
                             Оплачен: {% if order.is_paid == True %} Да {% else %} Нет {% endif %} |
@@ -56,18 +56,13 @@
                                 </thead>
                                 <tbody>
                                     {% for item in order.orderitem_set.all %}
-
                                     <tr>
-                                        <td>
-                                            <a class="text-white">
-                                            {{ item.product.name }}
-                                            </a>
-                                        </td>
+                                        <td>{{ item.product.name }}</td>
                                         <td>{{ item.quantity }}</td>
                                         <td>{{ item.price  }}</td>
                                         <td>{{ item.weight  }}</td>
-                                        <td>{{ item.products_price}}</td>
-                                        <td>{{ item.products_weight}}</td>
+                                        <td>{{item.products_price}}</td>
+                                        <td>{{item.products_weight}}</td>
                                     </tr>
                                     {% endfor %}
                                 </tbody>

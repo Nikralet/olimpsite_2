@@ -31,7 +31,7 @@
 
 
 div.table-title {
-   display: block;
+  display: block;
   margin: auto;
   max-width: 600px;
   padding:5px;
@@ -56,7 +56,7 @@ th {
   background:#1b1e24;
   border-bottom:4px solid #9ea7af;
   border-right: 1px solid #343a45;
-  font-size:23px;
+  font-size:25px;
   font-weight: 100;
   padding:12px;
   text-align:left;
@@ -78,4 +78,5 @@ td {
   background:rgb(192 192 192 / 70%) !important;;
 }
 
-
+@media screen and (min-width:320px) {th {font-size: 23px;}
+@media screen and (min-width:1281px) {th {font-size: 25px;}

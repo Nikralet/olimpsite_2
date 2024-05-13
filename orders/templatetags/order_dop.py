@@ -36,8 +36,8 @@ def basket_total_sum_price2(user):
         point.loyalty_program = 0
 
     elif basket_sum_price < points:
-        new_price = 0
-        point.loyalty_program = points - basket_sum_price
+        new_price = 1
+        point.loyalty_program = points - basket_sum_price + 1
 
     return decimal.Decimal(new_price)
 

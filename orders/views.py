@@ -129,7 +129,7 @@ def create_order(request):
         if form.is_valid():
             print(form.errors)
             try:
-                with (transaction.atomic()):
+                with (((transaction.atomic()))):
                     user = request.user
                     basket_items = Basket.objects.filter(user=user)
 
@@ -187,42 +187,20 @@ def create_order(request):
                         point.save()
 
                         if order.payment_on_get == '0':
+                            k = [i.product.name for i in basket_items]
+                            text = ''
+                            for i in range(len(k)):
+                                text += str(k[i]) + ', '
+                            text = text[:-2]
+                            description = ' Номер заказа: ' + str(order.id) + ';' + ' Время доставки: ' + str(
+                                order.delivery_datetime) + ';' + ' Список покупок: ' + text
                             urls = generate_payment_link(merchant_login=str('Cafe-Olimp'),
                                                          merchant_password_1=str('z7Q3USda2lXy2VwOc0Ov'),
                                                          cost=decimal.Decimal(order.total_cost),
                                                          number=int(order.id),
-                                                         description=order.phone_number)
-
-                            # def finally_one(event1, urls1, order1, count1):
-                            #     while not event1.isSet():
-                            #         event.wait(1)
-                            #         print(count1)
-                            #         print(check_success_payment(merchant_password_1=str('z7Q3USda2lXy2VwOc0Ov'),
-                            #                                     request=urls1))
-                            #         print(result_payment(merchant_password_2=str('GAf8r8tsRS7zSEVMx4R1'),
-                            #                              request=urls1))
-                            #         count1 += 1
-                            #         #print(request.build_absolute_uri())
-                            #         if check_success_payment(merchant_password_1=str('z7Q3USda2lXy2VwOc0Ov'),
-                            #                                  request=urls1
-                            #                                  ):
-                            #             order1.is_paid = True
-                            #             order1.save()
-                            #             print('оплата прошла успешно, баллы списаны')
-                            #             event1.set()
-                            #             #basket_items.delete()
-                            #         if count1 == 500:
-                            #             print('остановил')
-                            #             event1.set()
-                            #             #print(urls1)
-                            #             #return render(request=urls1, template_name='products/basket.html')
-                            # try:
+                                                         description=description)
                             return redirect(urls)
-                            # finally:
-                            #     event = threading.Event()
-                            #     count = 0
-                            #     thread_two = threading.Thread(target=finally_one, args=(event, urls, order, count))
-                            #     thread_two.start()
+
                         else:
                             # Очистить корзину пользователя после создания заказа
                             basket_items.delete()
