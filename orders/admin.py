@@ -2,18 +2,7 @@ from django.contrib import admin
 
 from orders.models import Order, OrderItem
 
-from datetime import datetime
-
-from rangefilter.filters import (
-    DateRangeFilterBuilder,
-    DateTimeRangeFilterBuilder,
-    NumericRangeFilterBuilder,
-    DateRangeQuickSelectListFilterBuilder,
-)
-
-
-# admin.site.register(Order)
-# admin.site.register(OrderItem)
+from rangefilter.filters import DateRangeFilterBuilder
 
 
 class OrderItemTabulareAdmin(admin.TabularInline):
