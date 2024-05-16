@@ -40,7 +40,7 @@ body {
 
 }
 
-#button_1, #button_2, #button_3, #button_4,button_10 {
+#button_1, #button_2, #button_3, #button_4,#button_10 {
     text-decoration: none;
 }
 #button_10::before {
@@ -123,10 +123,10 @@ body {
   transform: scaleX(1);
 }
 
-@media screen and (min-width:320px) { .navbar { max-width: 96%; } #button_1::before {width: 80px;} #button_2::before {width: 80px;}  #button_3::before {width: 120px;} #button_4::before {width: 40px;}}
-@media screen and (min-width:481px) { .navbar { max-width: 85%; } #button_1::before {width: 80px;} #button_2::before {width: 80px;}  #button_3::before {width: 120px;} #button_4::before {width: 40px;}}
-@media screen and (min-width:641px) { .navbar { max-width: 85%; } #button_1::before {width: 80px;} #button_2::before {width: 80px;}  #button_3::before {width: 120px;} #button_4::before {width: 40px;}}
+@media screen and (min-width:320px) { .navbar { max-width: 96%; } #button_1::before {width: 80px;} #button_2::before {width: 80px;}  #button_3::before {width: 120px;} #button_4::before {width: 40px;} #button_10::before {width: 80px;}}
+@media screen and (min-width:481px) { .navbar { max-width: 85%; } #button_1::before {width: 80px;} #button_2::before {width: 80px;}  #button_3::before {width: 120px;} #button_4::before {width: 40px;} #button_10::before {width: 80px;}}
+@media screen and (min-width:641px) { .navbar { max-width: 85%; } #button_1::before {width: 80px;} #button_2::before {width: 80px;}  #button_3::before {width: 120px;} #button_4::before {width: 40px;} #button_10::before {width: 80px;}}
 @media screen and (min-width:641px) { .navbar { max-width: 93%; }}
-@media screen and (min-width:961px) { .navbar { max-width: 85%; } #button_1::before {width: 80px;} #button_2::before {width: 80px;}  #button_3::before {width: 120px;} #button_4::before {width: 40px;}}
-@media screen and (min-width:1025px) { .navbar { max-width: 85%; } #button_1::before {width: 80px;} #button_2::before {width: 80px;}  #button_3::before {width: 120px;} #button_4::before {width: 40px;}}
-@media screen and (min-width:1281px) { .navbar { max-width: 85%; } #button_1::before {width: 80px;} #button_2::before {width: 80px;}  #button_3::before {width: 120px;} #button_4::before {width: 40px;}}
+@media screen and (min-width:961px) { .navbar { max-width: 85%; } #button_1::before {width: 80px;} #button_2::before {width: 80px;}  #button_3::before {width: 120px;} #button_4::before {width: 40px;} #button_10::before {width: 80px;}}
+@media screen and (min-width:1025px) { .navbar { max-width: 85%; } #button_1::before {width: 80px;} #button_2::before {width: 80px;}  #button_3::before {width: 120px;} #button_4::before {width: 40px;} #button_10::before {width: 80px;}}
+@media screen and (min-width:1281px) { .navbar { max-width: 85%; } #button_1::before {width: 80px;} #button_2::before {width: 80px;}  #button_3::before {width: 120px;} #button_4::before {width: 40px;} #button_10::before {width: 80px;}}
