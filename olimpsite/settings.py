@@ -153,3 +153,5 @@ PHONENUMBER_DEFAULT_REGION = 'RU'
 ROBOKASSA_TEST_MODE = True
 
 ROBOKASSA_TEST_FORM_TARGET = ['*']
+
+CSRF_TRUSTED_ORIGINS = ['https://olimp-kstovo.ru', 'https://www.olimp-kstovo.ru']
