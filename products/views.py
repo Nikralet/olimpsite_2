@@ -16,6 +16,11 @@ from django.template.loader import render_to_string
 from django.core.paginator import Paginator
 
 
+def robots(request):
+    context = {'title': 'Кафе Олимп'}
+    return render(request, 'products/robots.txt', context)
+
+
 def sitemap(request):
     context = {'title': 'Кафе Олимп'}
     return render(request, 'products/sitemap.xml', context)
