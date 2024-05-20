@@ -1,0 +1,16 @@
+User-agent: *
+Crawl-delay: 10
+Host: https://olimp-kstovo.ru/
+Disallow: /create_order.html/
+Disallow: /we/
+Disallow: /products/
+Disallow: /basket/
+Disallow: /profile/
+Disallow: /users/
+Disallow: /users/history_of_orders/
+Disallow: /admin/
+Disallow: /users/login/
+Disallow: /users/registration/
+Disallow: /sitemap.xml
+Disallow: /yandex_ff79486704445fe2.html
+Sitemap: https://olimp-kstovo.ru/sitemap.xml/
