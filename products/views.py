@@ -16,13 +16,13 @@ from django.template.loader import render_to_string
 from django.core.paginator import Paginator
 
 
+def sitemap(request):
+    context = {'title': 'Кафе Олимп'}
+    return render(request, 'products/sitemap.xml', context)
+
+
 def yandex_ff79486704445fe2(request):  # не трогать штука нужная
-    if request.user.is_authenticated:
-        context = {'title': 'Кафе Олимп',
-                   'baskets': Basket.objects.filter(user=request.user),
-                   }
-    else:
-        context = {'title': 'Кафе Олимп'}
+    context = {'title': 'Кафе Олимп'}
     return render(request, 'products/yandex_ff79486704445fe2.html', context)
 
 
