@@ -10,7 +10,10 @@
 {% endblock %}
 
 {% block content %}
-
+<head>
+    <meta name="robots" content="all"/>
+    <meta name="robots" content="noarchive"/>
+</head>
 
     <!-- Детали заказа -->
 <form action="{% url 'orders:create_order' %}" method="post">
