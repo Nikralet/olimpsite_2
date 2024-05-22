@@ -85,8 +85,8 @@ class OrderAdmin(DjangoObjectActions, admin.ModelAdmin):
 
     @action(label='Вкл/Выкл', description="Кнопка включения/выключения обновления страницы раз в минуту")  # optional
     def publish_this(self, request, obj):
-        OB = str(BASE_DIR) + '\static_dev\js/reloading_admin_orders.js'
-        OB1 = str(BASE_DIR) + '\static_dev\js/reloading_admin_orders1.js'
+        OB = str(BASE_DIR) + '\static\js/reloading_admin_orders.js'
+        OB1 = str(BASE_DIR) + '\static\js/reloading_admin_orders1.js'
         if not os.path.exists(OB):
             os.rename(OB1, OB)
             return
