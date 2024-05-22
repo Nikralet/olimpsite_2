@@ -3,7 +3,7 @@ import os
 from django.contrib import admin
 
 from olimpsite.settings import BASE_DIR
-from orders.models import Order, OrderItem, OrderBoolean
+from orders.models import Order, OrderItem
 
 from rangefilter.filters import DateRangeFilterBuilder
 
@@ -79,28 +79,20 @@ class OrderAdmin(DjangoObjectActions, admin.ModelAdmin):
 
     )
     inlines = (OrderItemTabulareAdmin,)
-    if OrderBoolean.objects.filter().count() == 0:
-        OrderBoolean.objects.create(count=False)
 
     class Media:
             js = ('js/reloading_admin_orders.js',)
 
     @action(label='Вкл/Выкл', description="Кнопка включения/выключения обновления страницы раз в минуту")  # optional
     def publish_this(self, request, obj):
-        OB = [OrderBoolean.objects.get(id=1).bool]
-        obc = OrderBoolean.objects.get(id=1)
-        if not OB[0]:
-            os.rename(str(BASE_DIR) + '\static_dev\js/reloading_admin_orders1.js',
-                      str(BASE_DIR) + '\static_dev\js/reloading_admin_orders.js')
-            obc.bool = True
-            obc.save()
+        OB = str(BASE_DIR) + '\static_dev\js/reloading_admin_orders.js'
+        OB1 = str(BASE_DIR) + '\static_dev\js/reloading_admin_orders1.js'
+        if not os.path.exists(OB):
+            os.rename(OB1, OB)
+            return
         else:
-            os.rename(str(BASE_DIR) + '\static_dev\js/reloading_admin_orders.js',
-                      str(BASE_DIR) + '\static_dev\js/reloading_admin_orders1.js')
-            obc.bool = False
-            obc.save()
-
-        return
+            os.rename(OB, OB1)
+            return
     change_actions = ('publish_this', )
     changelist_actions = ('publish_this', )
 

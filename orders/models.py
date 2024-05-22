@@ -1,5 +1,3 @@
-from datetime import datetime
-
 from django.db import models
 
 from products.models import Product
@@ -72,8 +70,4 @@ class OrderItem(models.Model):
 
     def __str__(self):
         return f"Товар {self.name} | Заказ № {self.order.pk}"
-
-
-class OrderBoolean(models.Model):
-    bool = models.BooleanField(default=False)
 
