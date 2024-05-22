@@ -195,7 +195,10 @@ def create_order(request):
                                                          cost=decimal.Decimal(order.total_cost),
                                                          number=int(order.id),
                                                          description=description)
-                            return redirect(urls)
+                            try:
+                                return redirect(urls)
+                            finally:
+                                basket_items.delete()
 
                         else:
                             # Очистить корзину пользователя после создания заказа
@@ -204,6 +207,7 @@ def create_order(request):
                             messages.success(request, 'Заказ оформлен!')
 
                             return redirect('users:history_of_orders')
+
             except ValidationError as e:
                 messages.success(request, str(e))
                 return redirect('basket:order')
