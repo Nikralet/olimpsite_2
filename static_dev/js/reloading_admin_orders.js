@@ -2,6 +2,8 @@ $(document).ready(function () {
 if (localStorage.length === 0) {
     localStorage.setItem('reload', 'stopped');
 };
+console.log(localStorage.length)
+console.log(typeof(localStorage.length))
 console.log(localStorage.getItem('reload'))
 if (localStorage.getItem('reload') == 'stopped') {
         alert('Обновление страницы выключено');
