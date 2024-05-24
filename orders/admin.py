@@ -81,18 +81,14 @@ class OrderAdmin(DjangoObjectActions, admin.ModelAdmin):
     inlines = (OrderItemTabulareAdmin,)
 
     class Media:
-            js = ('js/reloading_admin_orders.js',)
+        js = ('js\\reloading_admin_orders.js',)
 
     @action(label='Вкл/Выкл', description="Кнопка включения/выключения обновления страницы раз в минуту")  # optional
     def publish_this(self, request, obj):
-        OB = str(BASE_DIR) + '\static_dev\js/reloading_admin_orders.js'
-        OB1 = str(BASE_DIR) + '\static_dev\js/reloading_admin_orders1.js'
-        if not os.path.exists(OB):
-            os.rename(OB1, OB)
-            return
-        else:
-            os.rename(OB, OB1)
-            return
+        return
+    publish_this.attrs = {
+        'id': 'reload',
+    }
     change_actions = ('publish_this', )
     changelist_actions = ('publish_this', )
 
