@@ -8,7 +8,7 @@ if (localStorage.getItem('reload') === 'stopped') {
 if (localStorage.getItem('reload') === 'started') {
             setTimeout(function () {
             location.reload()
-            }, 6000);
+            }, 60000);
     }
 
 myFunction = document.getElementById('reload');
