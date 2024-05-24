@@ -1,5 +1,5 @@
 $(document).ready(function () {
-if (localStorage.length == 0) {
+if (localStorage.length === 0) {
     localStorage.setItem('reload', 'stopped');
 };
 console.log(localStorage.getItem('reload'))
