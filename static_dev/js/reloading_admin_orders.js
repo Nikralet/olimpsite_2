@@ -1,5 +1,5 @@
 $(document).ready(function () {
-if (localStorage.length === 2) {
+if (localStorage.length === 1) {
     console.log('тут0')
     localStorage.setItem('reload', 'stopped');
 };
