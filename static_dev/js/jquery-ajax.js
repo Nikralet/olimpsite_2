@@ -404,3 +404,22 @@ $(document).ready(function () {
 
 
 });
+
+    // При клике по кнопке забыли пароль открываем всплывающее(модальное) окно
+    $(document).on("click", "#a_pas", function (e) {
+        var forgot_your_password_url = $(this).attr("href_s");
+        $.ajax({
+            type: "POST",
+            url: forgot_your_password_url,
+            data: {
+                csrfmiddlewaretoken: $("[name=csrfmiddlewaretoken]").val(),
+            },
+            success: function (data) {
+                alert("Забыли пароль? Обратитесь к администратору в кафе «Олимп»! Он поможет вам изменить его.");
+            },
+            error: function (data) {
+                console.log("Ошибка");
+            },
+        });
+    });
+

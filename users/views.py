@@ -8,6 +8,7 @@ from django.shortcuts import render, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 
 from django.contrib import auth, messages
+from django.template.loader import render_to_string
 
 from django.urls import reverse
 
@@ -24,7 +25,7 @@ def login(request):
             user = auth.authenticate(username=username, password=password)
             if user:
                 auth.login(request, user)
-                return HttpResponseRedirect(reverse('index'))
+                return HttpResponseRedirect(reverse('products:index'))
     else:
         form = UserLoginForm()
     context = {'title': 'Кафе Олимп - авторизация',
@@ -39,7 +40,7 @@ def registration(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Поздравляем с успешной регистрацией!!!')
-            return HttpResponseRedirect(reverse('users:login'))
+            return HttpResponseRedirect(reverse('users:profile'))
     else:
         form = UserRegistrationForm  # возможно тут нужны ()
     context = {'title': 'Кафе Олимп - регистрация',
@@ -144,3 +145,4 @@ def history_of_orders(request):
                 finally:
                     robokassa_paid_yes_or_not(request)
     return render(request, 'users/history_of_orders.html', context)
+
