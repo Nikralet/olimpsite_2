@@ -20,7 +20,7 @@
 
                             <div class="card mb-3 border-dark" >
                                 <div class="card-body">
-                                    <h5>{{ basket.product.name }}</h5>
+                                    <h4>{{ basket.product.name }}</h4>
                                 </div>
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
@@ -39,7 +39,13 @@
                                             </div>
 
                                             <div class="col-lg-3 basket_spw basket_quantity_1">{{ basket.sum_price }} руб.</div>
-                                            <div class="col-lg-3 basket_spw basket_quantity_1">{{ basket.sum_weight }} гр.</div>
+
+                                            {% if basket.sum_weight != 0 %}
+                                                <div class="col-lg-3 basket_spw basket_quantity_1">{{ basket.sum_weight }} гр.</div>
+                                            {% elif basket.sum_number_of_pieces != 0 %}
+                                                <div class="col-lg-3 basket_spw basket_quantity_1">{{ basket.sum_number_of_pieces }} ед.</div>
+                                            {% endif %}
+
                                             <div class="col-lg-3 basket_quantity_1">
 
                                                 <a href="{% url 'products:basket_remove' %}" class="remove-from-basket" data-basket-id="{{ basket.id }}">
@@ -70,25 +76,22 @@
 
                         <div class="card border-dark mb-3   " id="card_2">
                             <div class="card-body d-flex flex-row">
-                                <h4 class="float-left">Предварительный итог</h4>
+                                <h4 class="float-left">Предварительный итог {% basket_total_sum_price user=request.user %} руб.</h4>
                             </div>
 
-                            <div class="card-footer">
-                                <div class="d-flex flex-row">
-                                    <h4 class="float-right">{% basket_total_sum_price user=request.user %} руб.</h4>
-                                    <a>&nbsp;</a>
-                                    <a>&nbsp;</a>
-                                    <h4 class="float-right">{% basket_total_sum_weight user=request.user %} гр.</h4>
-                                </div>
-                            </div>
                         </div>
 
-
-                        <a type="button" class="btn btn-success btn-lg" id="button_5"
-                           data-product-id="{{product.id}}" href="{% url 'orders:create_order' %}">
-                            Перейти к оформлению
-                            {% csrf_token %}
-                        </a>
+                        {% if baskets.total_sum_price >= 1000 %}
+                            <a type="button" class="btn btn-success btn-lg" id="button_5"
+                               data-product-id="{{product.id}}" href="{% url 'orders:create_order' %}">
+                                Перейти к оформлению
+                                {% csrf_token %}
+                            </a>
+                        {% else %}
+                            <a type="button" class="btn btn-success btn-lg" id="button_5">
+                                Сумма заказа должна быть больше 1000 руб.
+                            </a>
+                        {% endif %}
 
 {% else %}
     <h1>&nbsp;</h1>

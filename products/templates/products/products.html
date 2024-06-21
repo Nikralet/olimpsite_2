@@ -62,9 +62,15 @@
                             <h4 class="card-title text-center">
                                 <a>{{ product.name }}</a>
                             </h4>
-                            <div class="text-center card-title">
-                                <h5 class>{{ product.price }} руб. — {{ product.weight }} гр.</h5>
-                            </div>
+                            {% if product.weight != 0 %}
+                                <div class="text-center card-title">
+                                    <h5 class>{{ product.price }} руб. — {{ product.weight }} гр.</h5>
+                                </div>
+                            {% elif product.number_of_pieces != 0 %}
+                                <div class="text-center card-title">
+                                    <h5 class>{{ product.price }} руб. — {{ product.number_of_pieces }} ед.</h5>
+                                </div>
+                            {% endif %}
                         </div>
                         <div class="card-footer text-center d-flex justify-content-between">
                             {% if user.is_authenticated %}

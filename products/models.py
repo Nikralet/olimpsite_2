@@ -22,6 +22,7 @@ class Product(models.Model):
     description = models.TextField()
     price = models.DecimalField(max_digits=8, decimal_places=0, verbose_name="Цена")  # знаки после запятой и количество цифр в цене
     weight = models.DecimalField(max_digits=8, decimal_places=0, verbose_name="Вес")  # знаки после запятой и количество цифр в весе
+    number_of_pieces = models.PositiveSmallIntegerField(verbose_name="Количество", default=0, null=True)
     on_or_off = models.BooleanField(default=True, verbose_name="Продаётся")
     image = models.ImageField(upload_to='products_images')
     category = models.ForeignKey(to=ProductCategory, on_delete=models.PROTECT, verbose_name="Категория")
@@ -63,8 +64,10 @@ class Basket(models.Model):
         return f'Корзина для {self.user.username} | Продукт: {self.product.name}'
 
     def sum_price(self):
-        sum_price = self.product.price * self.quantity
-        return sum_price
+        return self.product.price * self.quantity
 
     def sum_weight(self):
         return self.product.weight * self.quantity
+
+    def sum_number_of_pieces(self):
+        return self.product.number_of_pieces * self.quantity

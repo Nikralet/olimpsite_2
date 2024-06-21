@@ -10,7 +10,7 @@ if (window.location.origin + window.location.pathname === window.location.origin
     if (localStorage.getItem('reload') === 'started') {
                 setTimeout(function () {
                 location.reload(window.location.origin + '/admin/orders/order/')
-                }, 6000);
+                }, 60000 * 5);
         }
 
     myFunction = document.getElementById('reload');
