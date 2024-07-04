@@ -36,6 +36,9 @@
     margin-top: 3.5rem;
     margin-bottom: 1rem;
 }
+#card_4 {
+    margin-bottom: 1rem;
+}
 
 @media screen and (min-width:320px) {#button_6 {--bs-btn-padding-x: 24.36%;}}
 @media screen and (min-width:360px) {#button_6 {--bs-btn-padding-x: 27.41%;}}
