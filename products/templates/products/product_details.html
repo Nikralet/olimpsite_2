@@ -5,8 +5,11 @@
             <h1 class="modal-title fs-3" id="exampleModalLabel">{{ product.name }}</h1>
         </div>
         <div class="modal-body">
-            {% if product.weight != 0 %}
+            {% if product.weight != 1 %}
                 <h5 class="text-center">Цена {{product.price}} рублей за {{product.weight}} грамм(ов)</h5>
+            <div class="text-center card-title">
+                <h5 class>Минимальная масса заказа: {{ product.min_quantity_by_weight }} гр.</h5>
+            </div>
             {% elif product.number_of_pieces != 0 %}
                 <h5 class="text-center">Цена {{product.price}} рублей за {{ product.number_of_pieces }} единицу(ы)</h5>
             {% endif %}

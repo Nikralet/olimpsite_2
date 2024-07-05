@@ -62,9 +62,12 @@
                             <h4 class="card-title text-center">
                                 <a>{{ product.name }}</a>
                             </h4>
-                            {% if product.weight != 0 %}
+                            {% if product.weight != 1 %}
                                 <div class="text-center card-title">
                                     <h5 class>{{ product.price }} руб. — {{ product.weight }} гр.</h5>
+                                </div>
+                                <div class="text-center card-title">
+                                    <p class>Мин. масса заказа: {{ product.min_quantity_by_weight }} гр.</p>
                                 </div>
                             {% elif product.number_of_pieces != 0 %}
                                 <div class="text-center card-title">
@@ -76,7 +79,7 @@
                             {% if user.is_authenticated %}
 
                             <a class="btn btn-success add-to-basket" href="{% url 'products:basket_add' %}"
-                               data-product-id="{{product.id}}">
+                               data-product-id="{{product.id}}" data-min-quantity-product="{{ product.product_min_quantity }}" data-product-mass="{{ basket.sum_weight }}">
                                 Отправить в корзину
                             </a>
 

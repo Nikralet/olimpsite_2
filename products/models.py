@@ -21,7 +21,9 @@ class Product(models.Model):
     slug = models.SlugField(max_length=200, unique=True, blank=True, null=True, verbose_name='URL')
     description = models.TextField()
     price = models.DecimalField(max_digits=8, decimal_places=0, verbose_name="Цена")  # знаки после запятой и количество цифр в цене
-    weight = models.DecimalField(max_digits=8, decimal_places=0, verbose_name="Вес")  # знаки после запятой и количество цифр в весе
+    weight = models.DecimalField(max_digits=8, decimal_places=0, verbose_name="Масса")  # знаки после запятой и количество цифр в весе
+    min_quantity_by_weight = models.DecimalField(max_digits=8, decimal_places=0, default=100,
+                                                 verbose_name="Мин. кол-во по массе")  # знаки после запятой и количество цифр в весе
     number_of_pieces = models.PositiveSmallIntegerField(verbose_name="Количество", default=0, null=True)
     on_or_off = models.BooleanField(default=True, verbose_name="Продаётся")
     image = models.ImageField(upload_to='products_images')
@@ -38,6 +40,9 @@ class Product(models.Model):
 
     def sell_price(self):
         return self.price
+
+    def product_min_quantity(self):
+        return self.min_quantity_by_weight / self.weight
 
 
 class BasketQuerySet(models.QuerySet):
@@ -71,3 +76,6 @@ class Basket(models.Model):
 
     def sum_number_of_pieces(self):
         return self.product.number_of_pieces * self.quantity
+
+    def basket_min_quantity(self):
+        return self.product.min_quantity_by_weight / self.product.weight

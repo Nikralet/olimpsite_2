@@ -12,7 +12,6 @@ $(document).ready(function () {
         // Берем элемент счетчика в значке корзины и берем оттуда значение
         var goodsInBasketCount = $("#goods-in-basket-count");
         var basketCount = parseInt(goodsInBasketCount.text() || 0);
-
         // Получаем id товара из атрибута data-product-id
         var product_id = $(this).data("product-id");
 
@@ -45,6 +44,9 @@ $(document).ready(function () {
 
         // Из атрибута href берем ссылку на контроллер django
         var add_to_basket_url = $(this).attr("href");
+        // Берём значение минимальной массы для товара
+        var productMinMass = $(this).data("min-quantity-product");
+        // Берём значение общей массы для товара в корзине
 
         var data = {
             product_id: product_id,
@@ -63,10 +65,18 @@ $(document).ready(function () {
                     setTimeout(function () {
                         successMessage.fadeOut(400);
                     }, 1000);
-
+                    var productMass = data.basket_mass / 100
+                    console.log(productMass)
+                    console.log(productMinMass)
                     // Увеличиваем количество товаров в корзине (отрисовка в шаблоне)
-                    basketCount++;
-                    goodsInBasketCount.text(basketCount);
+                    if (productMass > productMinMass) {
+                        basketCount++;
+                        goodsInBasketCount.text(basketCount);
+                    }
+                    else if (productMass <= productMinMass) {
+                        basketCount += productMinMass;
+                        goodsInBasketCount.text(basketCount);
+                    }
 
                     // Меняем содержимое корзины на ответ от django (новый отрисованный фрагмент разметки корзины)
                     var basketItemsContainer = $("#basket-items-container");
@@ -151,8 +161,10 @@ $(document).ready(function () {
         var $input = $(this).closest('.input-group').find('.number');
         // Берем значение количества товара
         var currentValue = parseInt($input.val());
+        // Берём значение минимальной массы для товара
+        var basketMinMass = $(this).data("min-quantity");
         // Если количества больше одного, то только тогда делаем -1
-        if (currentValue > 1) {
+        if (currentValue > basketMinMass) {
             $input.val(currentValue - 1);
             // Запускаем функцию определенную ниже
             // с аргументами (id карты, новое количество, количество уменьшилось или прибавилось, url)

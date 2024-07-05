@@ -104,20 +104,23 @@ def basket_add(request):
     baskets = Basket.objects.filter(user=request.user, product=product)
 
     if not baskets.exists():
-        Basket.objects.create(user=request.user, product=product, quantity=1)
+        Basket.objects.create(user=request.user, product=product, quantity=product.product_min_quantity())
+        basket = baskets.first()
+        basket_mass = basket.sum_weight()
     else:
         basket = baskets.first()
         basket.quantity += 1
         basket.save()
+        basket_mass = basket.sum_weight()
 
     user_basket = get_user_baskets(request)
-
     basket_items_html = render_to_string("products/basket_set.html",
                                     {"basket": user_basket}, request=request)
 
     response_data = {
         "message": "Товар добавлен в корзину",
         "basket_items_html": basket_items_html,
+        "basket_mass": basket_mass,
     }
 
     return JsonResponse(response_data)

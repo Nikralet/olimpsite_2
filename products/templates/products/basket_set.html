@@ -29,7 +29,7 @@
                                             <div class="col-lg-3" >
                                                 <div class="d-flex d-inline flex-row bd-highlight mb-6">
                                                     <span class="input-group-btn">
-                                                        <button type="button" class="btn btn-primary btn-lg decrement" data-basket-id="{{ basket.id }}" data-basket-change-url="{% url 'products:basket_change' %}">{% csrf_token %} -</button>
+                                                        <button type="button" class="btn btn-primary btn-lg decrement" data-basket-id="{{ basket.id }}" data-min-quantity="{{ basket.basket_min_quantity }}" data-basket-change-url="{% url 'products:basket_change' %}">{% csrf_token %} -</button>
                                                     </span>
                                                     <input type="text" class="form-control number prov_1 text-center" value="{{ basket.quantity }}" readonly>
                                                     <span class="input-group-btn">
