@@ -4589,6 +4589,71 @@
    }
 },
 {
+   "model": "admin.logentry",
+   "pk": 354,
+   "fields": {
+      "action_time": "2024-07-06T13:32:07.568Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 355,
+   "fields": {
+      "action_time": "2024-07-06T13:32:07.694Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Продукт: Тестовый шашлык | Категория: Блюда на мангале",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 356,
+   "fields": {
+      "action_time": "2024-07-06T13:32:12.004Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Супы",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 357,
+   "fields": {
+      "action_time": "2024-07-06T13:32:12.147Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Блюда на мангале",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 358,
+   "fields": {
+      "action_time": "2024-07-06T13:32:12.256Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Все",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
    "model": "auth.permission",
    "pk": 1,
    "fields": {
@@ -5274,65 +5339,6 @@
    "fields": {
       "session_data": ".eJxVjMsOwiAQRf-FtSHAyAAu3fsNhMcgVQNJaVfGf7dNutDtPefcN_NhXapfB81-yuzCJDv9bjGkJ7Ud5Edo985Tb8s8Rb4r_KCD33qm1_Vw_w5qGHWrLWqhSUmldDLgXHGCksaYChlJwQLorNEItCABNwUNSqvAiILngIZ9vrLSNjw:1sKdGb:9qMm_j8pHbakP7lDtRCFdloZccxw-KMY6wjLe_WrGBM",
       "expire_date": "2024-07-05T12:21:21.351Z"
-   }
-},
-{
-   "model": "products.productcategory",
-   "pk": 1,
-   "fields": {
-      "name": "Все",
-      "description": "",
-      "slug": "vse"
-   }
-},
-{
-   "model": "products.productcategory",
-   "pk": 2,
-   "fields": {
-      "name": "Блюда на мангале",
-      "description": "авав",
-      "slug": "blyuda-na-mangale"
-   }
-},
-{
-   "model": "products.productcategory",
-   "pk": 3,
-   "fields": {
-      "name": "Супы",
-      "description": "супы",
-      "slug": "supy"
-   }
-},
-{
-   "model": "products.product",
-   "pk": 1,
-   "fields": {
-      "name": "Тестовый шашлык",
-      "slug": "testovyj-shashlyk",
-      "description": "авав",
-      "price": "1",
-      "weight": "100",
-      "min_quantity_by_weight": "300",
-      "number_of_pieces": 0,
-      "on_or_off": true,
-      "image": "products_images/1617223303_12-p-garniri-dlya-vtorikh-blyud-krasivo-18.jpg",
-      "category": 2
-   }
-},
-{
-   "model": "products.product",
-   "pk": 2,
-   "fields": {
-      "name": "Борщ",
-      "slug": "borsh",
-      "description": "апавпп",
-      "price": "100",
-      "weight": "1",
-      "min_quantity_by_weight": "1",
-      "number_of_pieces": 1,
-      "on_or_off": true,
-      "image": "products_images/cb9c411a9e69a1df7fc51f6300bcdaf4.jpg",
-      "category": 3
    }
 },
 {
