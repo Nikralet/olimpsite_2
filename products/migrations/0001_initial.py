@@ -28,7 +28,6 @@ class Migration(migrations.Migration):
                 ('description', models.TextField()),
                 ('price', models.DecimalField(decimal_places=0, max_digits=8, verbose_name='Цена')),
                 ('weight', models.DecimalField(decimal_places=0, max_digits=8, verbose_name='Масса')),
-                ('min_quantity_by_weight', models.DecimalField(decimal_places=0, default=100, max_digits=8, verbose_name='Мин. кол-во по массе')),
                 ('number_of_pieces', models.PositiveSmallIntegerField(default=0, null=True, verbose_name='Количество')),
                 ('on_or_off', models.BooleanField(default=True, verbose_name='Продаётся')),
                 ('image', models.ImageField(upload_to='products_images')),
