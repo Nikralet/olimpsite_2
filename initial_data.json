@@ -5379,5 +5379,25 @@
       "session_data": ".eJxVjMsOwiAQRf-FtSHAyAAu3fsNhMcgVQNJaVfGf7dNutDtPefcN_NhXapfB81-yuzCJDv9bjGkJ7Ud5Edo985Tb8s8Rb4r_KCD33qm1_Vw_w5qGHWrLWqhSUmldDLgXHGCksaYChlJwQLorNEItCABNwUNSqvAiILngIZ9vrLSNjw:1sKdGb:9qMm_j8pHbakP7lDtRCFdloZccxw-KMY6wjLe_WrGBM",
       "expire_date": "2024-07-05T12:21:21.351Z"
    }
+},
+{
+   "model": "users.user",
+   "pk": 1,
+   "fields": {
+      "password": "pbkdf2_sha256$720000$2q3lL4zgRFfeuegySMUtux$f2HKLzy4lpCR8sfIFZACRUKyppBFULu3pkxm71C31Nc=",
+      "last_login": "2024-07-05T19:15:43Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "Назар",
+      "last_name": "Пащанин",
+      "email": "naz.psh@mail.ru",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-03-13T15:34:16Z",
+      "phone_number": "+79159533544",
+      "loyalty_program": 17804,
+      "groups": [],
+      "user_permissions": []
+   }
 }
 ]
