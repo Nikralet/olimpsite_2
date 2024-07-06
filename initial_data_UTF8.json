@@ -4693,6 +4693,19 @@
    }
 },
 {
+   "model": "admin.logentry",
+   "pk": 362,
+   "fields": {
+      "action_time": "2024-07-06T15:36:19.649Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "admin",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u043e\\u043c\\u0435\\u0440 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\\u0430\"]}}]"
+   }
+},
+{
    "model": "auth.permission",
    "pk": 1,
    "fields": {
@@ -5394,7 +5407,7 @@
       "is_staff": true,
       "is_active": true,
       "date_joined": "2024-03-13T15:34:16Z",
-      "phone_number": "+79159533544",
+      "phone_number": "+79159533533",
       "loyalty_program": 17804,
       "groups": [],
       "user_permissions": []
