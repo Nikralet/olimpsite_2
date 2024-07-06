@@ -1,4 +1,3 @@
-False
 [
 {
    "model": "admin.logentry",
@@ -3784,6 +3783,812 @@ False
    }
 },
 {
+   "model": "admin.logentry",
+   "pk": 292,
+   "fields": {
+      "action_time": "2024-06-09T20:42:19.921Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Nikralet",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Password\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 293,
+   "fields": {
+      "action_time": "2024-06-09T22:22:25.881Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Nikralet",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0411\\u0430\\u043b\\u043b\\u044b \\u043f\\u0440\\u043e\\u0433\\u0440\\u0430\\u043c\\u043c\\u044b \\u043b\\u043e\\u044f\\u043b\\u044c\\u043d\\u043e\\u0441\\u0442\\u0438\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 294,
+   "fields": {
+      "action_time": "2024-06-09T22:22:29.342Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Nikralet",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0411\\u0430\\u043b\\u043b\\u044b \\u043f\\u0440\\u043e\\u0433\\u0440\\u0430\\u043c\\u043c\\u044b \\u043b\\u043e\\u044f\\u043b\\u044c\\u043d\\u043e\\u0441\\u0442\\u0438\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 295,
+   "fields": {
+      "action_time": "2024-06-21T16:41:50.814Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 296,
+   "fields": {
+      "action_time": "2024-06-21T16:41:58.783Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Продукт: Тестовый шашлык | Категория: Блюда на мангале",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 297,
+   "fields": {
+      "action_time": "2024-06-21T16:45:50.953Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Продукт: Тестовый шашлык | Категория: Блюда на мангале",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u0435\\u0441\", \"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 298,
+   "fields": {
+      "action_time": "2024-07-05T19:39:24.854Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщgg | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 299,
+   "fields": {
+      "action_time": "2024-07-05T19:39:30.346Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщgg | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 300,
+   "fields": {
+      "action_time": "2024-07-05T19:39:43.496Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 301,
+   "fields": {
+      "action_time": "2024-07-05T19:39:51.099Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борща | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 302,
+   "fields": {
+      "action_time": "2024-07-05T19:43:24.079Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщец | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 303,
+   "fields": {
+      "action_time": "2024-07-05T19:45:57.889Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 304,
+   "fields": {
+      "action_time": "2024-07-05T19:46:57.634Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"URL\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 305,
+   "fields": {
+      "action_time": "2024-07-05T19:51:55.927Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Продукт: Тестовый шашлык | Категория: Блюда на мангале",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0430\\u0441\\u0441\\u0430\", \"\\u041c\\u0438\\u043d. \\u043a\\u043e\\u043b-\\u0432\\u043e \\u043f\\u043e \\u043c\\u0430\\u0441\\u0441\\u0435\", \"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 306,
+   "fields": {
+      "action_time": "2024-07-05T20:42:23.825Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0438\\u043d. \\u043a\\u043e\\u043b-\\u0432\\u043e \\u043f\\u043e \\u043c\\u0430\\u0441\\u0441\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 307,
+   "fields": {
+      "action_time": "2024-07-05T21:23:48.499Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0430\\u0441\\u0441\\u0430\", \"\\u041c\\u0438\\u043d. \\u043a\\u043e\\u043b-\\u0432\\u043e \\u043f\\u043e \\u043c\\u0430\\u0441\\u0441\\u0435\", \"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 308,
+   "fields": {
+      "action_time": "2024-07-05T21:24:04.618Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0430\\u0441\\u0441\\u0430\", \"\\u041c\\u0438\\u043d. \\u043a\\u043e\\u043b-\\u0432\\u043e \\u043f\\u043e \\u043c\\u0430\\u0441\\u0441\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 309,
+   "fields": {
+      "action_time": "2024-07-05T21:24:11.657Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0438\\u043d. \\u043a\\u043e\\u043b-\\u0432\\u043e \\u043f\\u043e \\u043c\\u0430\\u0441\\u0441\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 310,
+   "fields": {
+      "action_time": "2024-07-05T21:25:58.648Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0438\\u043d. \\u043a\\u043e\\u043b-\\u0432\\u043e \\u043f\\u043e \\u043c\\u0430\\u0441\\u0441\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 311,
+   "fields": {
+      "action_time": "2024-07-06T12:57:11.684Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "411",
+      "object_repr": "Товар Борщ | Заказ № 289",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 312,
+   "fields": {
+      "action_time": "2024-07-06T12:57:11.792Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "410",
+      "object_repr": "Товар Борщ | Заказ № 288",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 313,
+   "fields": {
+      "action_time": "2024-07-06T12:57:11.896Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "409",
+      "object_repr": "Товар Борщ | Заказ № 287",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 314,
+   "fields": {
+      "action_time": "2024-07-06T12:57:12.004Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "408",
+      "object_repr": "Товар Борщ | Заказ № 286",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 315,
+   "fields": {
+      "action_time": "2024-07-06T12:57:12.096Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "407",
+      "object_repr": "Товар Борщ | Заказ № 285",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 316,
+   "fields": {
+      "action_time": "2024-07-06T12:57:12.197Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "406",
+      "object_repr": "Товар Борщ | Заказ № 284",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 317,
+   "fields": {
+      "action_time": "2024-07-06T12:57:12.330Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "405",
+      "object_repr": "Товар Борщ | Заказ № 283",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 318,
+   "fields": {
+      "action_time": "2024-07-06T12:57:12.433Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "404",
+      "object_repr": "Товар Борщ | Заказ № 282",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 319,
+   "fields": {
+      "action_time": "2024-07-06T12:57:12.546Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "403",
+      "object_repr": "Товар Борщ | Заказ № 281",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 320,
+   "fields": {
+      "action_time": "2024-07-06T12:57:12.670Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "402",
+      "object_repr": "Товар Борщ | Заказ № 280",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 321,
+   "fields": {
+      "action_time": "2024-07-06T12:57:12.805Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "401",
+      "object_repr": "Товар Тестовый шашлык | Заказ № 280",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 322,
+   "fields": {
+      "action_time": "2024-07-06T12:57:12.937Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "400",
+      "object_repr": "Товар Борщ | Заказ № 279",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 323,
+   "fields": {
+      "action_time": "2024-07-06T12:57:13.069Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "399",
+      "object_repr": "Товар Тестовый шашлык | Заказ № 279",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 324,
+   "fields": {
+      "action_time": "2024-07-06T12:57:13.167Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "398",
+      "object_repr": "Товар Тестовый шашлык | Заказ № 278",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 325,
+   "fields": {
+      "action_time": "2024-07-06T12:57:13.284Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "397",
+      "object_repr": "Товар Борщ | Заказ № 278",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 326,
+   "fields": {
+      "action_time": "2024-07-06T12:57:13.389Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "396",
+      "object_repr": "Товар Борщ | Заказ № 277",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 327,
+   "fields": {
+      "action_time": "2024-07-06T12:57:13.514Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "395",
+      "object_repr": "Товар Тестовый шашлык | Заказ № 276",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 328,
+   "fields": {
+      "action_time": "2024-07-06T12:57:13.640Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "394",
+      "object_repr": "Товар Борщ | Заказ № 275",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 329,
+   "fields": {
+      "action_time": "2024-07-06T12:57:13.754Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "393",
+      "object_repr": "Товар Борщ | Заказ № 274",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 330,
+   "fields": {
+      "action_time": "2024-07-06T12:57:13.880Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "392",
+      "object_repr": "Товар Тестовый шашлык | Заказ № 273",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 331,
+   "fields": {
+      "action_time": "2024-07-06T12:57:14.013Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "391",
+      "object_repr": "Товар Борщ | Заказ № 272",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 332,
+   "fields": {
+      "action_time": "2024-07-06T12:57:14.139Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "390",
+      "object_repr": "Товар Борщ | Заказ № 271",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 333,
+   "fields": {
+      "action_time": "2024-07-06T12:57:14.288Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "388",
+      "object_repr": "Товар Тестовый шашлык | Заказ № 269",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 334,
+   "fields": {
+      "action_time": "2024-07-06T12:57:21.375Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "289",
+      "object_repr": "Заказ № 289 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 335,
+   "fields": {
+      "action_time": "2024-07-06T12:57:21.455Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "288",
+      "object_repr": "Заказ № 288 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 336,
+   "fields": {
+      "action_time": "2024-07-06T12:57:21.528Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "287",
+      "object_repr": "Заказ № 287 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 337,
+   "fields": {
+      "action_time": "2024-07-06T12:57:21.621Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "286",
+      "object_repr": "Заказ № 286 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 338,
+   "fields": {
+      "action_time": "2024-07-06T12:57:21.703Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "285",
+      "object_repr": "Заказ № 285 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 339,
+   "fields": {
+      "action_time": "2024-07-06T12:57:21.795Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "284",
+      "object_repr": "Заказ № 284 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 340,
+   "fields": {
+      "action_time": "2024-07-06T12:57:21.895Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "283",
+      "object_repr": "Заказ № 283 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 341,
+   "fields": {
+      "action_time": "2024-07-06T12:57:21.987Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "282",
+      "object_repr": "Заказ № 282 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 342,
+   "fields": {
+      "action_time": "2024-07-06T12:57:22.095Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "281",
+      "object_repr": "Заказ № 281 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 343,
+   "fields": {
+      "action_time": "2024-07-06T12:57:22.205Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "280",
+      "object_repr": "Заказ № 280 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 344,
+   "fields": {
+      "action_time": "2024-07-06T12:57:22.329Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "279",
+      "object_repr": "Заказ № 279 | Покупатель Назар Пащанин| Суммарная стоимость: 1001| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 345,
+   "fields": {
+      "action_time": "2024-07-06T12:57:22.445Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "278",
+      "object_repr": "Заказ № 278 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 346,
+   "fields": {
+      "action_time": "2024-07-06T12:57:22.570Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "277",
+      "object_repr": "Заказ № 277 | Покупатель Назар Пащанин| Суммарная стоимость: 100| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 347,
+   "fields": {
+      "action_time": "2024-07-06T12:57:22.675Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "276",
+      "object_repr": "Заказ № 276 | Покупатель Назар Пащанин| Суммарная стоимость: 2| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 348,
+   "fields": {
+      "action_time": "2024-07-06T12:57:22.792Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "275",
+      "object_repr": "Заказ № 275 | Покупатель Назар Пащанин| Суммарная стоимость: 100| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 349,
+   "fields": {
+      "action_time": "2024-07-06T12:57:22.891Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "274",
+      "object_repr": "Заказ № 274 | Покупатель Назар Пащанин| Суммарная стоимость: 200| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 350,
+   "fields": {
+      "action_time": "2024-07-06T12:57:23.017Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "273",
+      "object_repr": "Заказ № 273 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 351,
+   "fields": {
+      "action_time": "2024-07-06T12:57:23.138Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "272",
+      "object_repr": "Заказ № 272 | Покупатель Назар Пащанин| Суммарная стоимость: 100| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 352,
+   "fields": {
+      "action_time": "2024-07-06T12:57:23.271Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "271",
+      "object_repr": "Заказ № 271 | Покупатель Назар Пащанин| Суммарная стоимость: 100| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 353,
+   "fields": {
+      "action_time": "2024-07-06T12:57:23.395Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "269",
+      "object_repr": "Заказ № 269 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
    "model": "auth.permission",
    "pk": 1,
    "fields": {
@@ -4401,6 +5206,14 @@ False
 },
 {
    "model": "sessions.session",
+   "pk": "1bz1h2qiyljzglrkoub0xd7b95p3svo6",
+   "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSHAyAAu3fsNhMcgVQNJaVfGf7dNutDtPefcN_NhXapfB81-yuzCJDv9bjGkJ7Ud5Edo985Tb8s8Rb4r_KCD33qm1_Vw_w5qGHWrLWqhSUmldDLgXHGCksaYChlJwQLorNEItCABNwUNSqvAiILngIZ9vrLSNjw:1sPoPH:OAY-xLyA71ANTP_hUthl7kNdJ3re7yAhRVecTrkjl7U",
+      "expire_date": "2024-07-19T19:15:43.837Z"
+   }
+},
+{
+   "model": "sessions.session",
    "pk": "1c5agetj6tdribuy9x5vvvcbzhi2x7f5",
    "fields": {
       "session_data": ".eJxVjMsOwiAQRf-FtSHAyAAu3fsNhMcgVQNJaVfGf7dNutDtPefcN_NhXapfB81-yuzCJDv9bjGkJ7Ud5Edo985Tb8s8Rb4r_KCD33qm1_Vw_w5qGHWrLWqhSUmldDLgXHGCksaYChlJwQLorNEItCABNwUNSqvAiILngIZ9vrLSNjw:1s9A7J:bW2zlpVGZPtHT1AZYFVxppKQCAbtr65Yy8K-hDFVMZo",
@@ -4409,10 +5222,26 @@ False
 },
 {
    "model": "sessions.session",
+   "pk": "hxi8o66cdyh9dn1ah4sespgj84r4jff9",
+   "fields": {
+      "session_data": "e30:1sGbdS:-Ne-yQGztxqaA0sM2dmq5WVM-uAe4vYjbmOwi-NPiqo",
+      "expire_date": "2024-06-24T09:48:18.187Z"
+   }
+},
+{
+   "model": "sessions.session",
    "pk": "j9zd8yinb8ih1xgjgjjb6jjr7pdiivze",
    "fields": {
       "session_data": ".eJxVjMsOwiAQRf-FtSHAyAAu3fsNhMcgVQNJaVfGf7dNutDtPefcN_NhXapfB81-yuzCJDv9bjGkJ7Ud5Edo985Tb8s8Rb4r_KCD33qm1_Vw_w5qGHWrLWqhSUmldDLgXHGCksaYChlJwQLorNEItCABNwUNSqvAiILngIZ9vrLSNjw:1rqFj2:sq46WQGNdnJEcyf-8UI_rHy0AuK_KOm7z2DeTDznR3k",
       "expire_date": "2024-04-12T17:09:08.332Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "ov0m4959hux4dpx9a85f02j53jyl4uqf",
+   "fields": {
+      "session_data": "e30:1sGbd1:gd6AGxUL0cfRS9d-IA2B2plHrgF8ifLJKrQo-lLdeI4",
+      "expire_date": "2024-06-24T09:47:51.449Z"
    }
 },
 {
@@ -4429,6 +5258,22 @@ False
    "fields": {
       "session_data": ".eJxVjMsOwiAQRf-FtSHAyAAu3fsNhMcgVQNJaVfGf7dNutDtPefcN_NhXapfB81-yuzCJDv9bjGkJ7Ud5Edo985Tb8s8Rb4r_KCD33qm1_Vw_w5qGHWrLWqhSUmldDLgXHGCksaYChlJwQLorNEItCABNwUNSqvAiILngIZ9vrLSNjw:1rzGhi:AD5jXxTCSYRhICjljZQd1H1XMGiJwEF5Y1VIQPOLh2A",
       "expire_date": "2024-05-07T14:01:02.411Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "svly2xmzbl7ialkvrhnf7335joanddye",
+   "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSHAyAAu3fsNhMcgVQNJaVfGf7dNutDtPefcN_NhXapfB81-yuzCJDv9bjGkJ7Ud5Edo985Tb8s8Rb4r_KCD33qm1_Vw_w5qGHWrLWqhSUmldDLgXHGCksaYChlJwQLorNEItCABNwUNSqvAiILngIZ9vrLSNjw:1sGQlm:jR4w9kH2FpIiqPSzbqWZjFSYRlP-3is-xmvdUAHoEpQ",
+      "expire_date": "2024-06-23T22:12:10.696Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "tr8erq3li2x7k6w2y3pumb58gbbori0m",
+   "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSHAyAAu3fsNhMcgVQNJaVfGf7dNutDtPefcN_NhXapfB81-yuzCJDv9bjGkJ7Ud5Edo985Tb8s8Rb4r_KCD33qm1_Vw_w5qGHWrLWqhSUmldDLgXHGCksaYChlJwQLorNEItCABNwUNSqvAiILngIZ9vrLSNjw:1sKdGb:9qMm_j8pHbakP7lDtRCFdloZccxw-KMY6wjLe_WrGBM",
+      "expire_date": "2024-07-05T12:21:21.351Z"
    }
 },
 {
@@ -4466,7 +5311,9 @@ False
       "slug": "testovyj-shashlyk",
       "description": "авав",
       "price": "1",
-      "weight": "1",
+      "weight": "100",
+      "min_quantity_by_weight": "300",
+      "number_of_pieces": 0,
       "on_or_off": true,
       "image": "products_images/1617223303_12-p-garniri-dlya-vtorikh-blyud-krasivo-18.jpg",
       "category": 2
@@ -4480,7 +5327,9 @@ False
       "slug": "borsh",
       "description": "апавпп",
       "price": "100",
-      "weight": "123",
+      "weight": "1",
+      "min_quantity_by_weight": "1",
+      "number_of_pieces": 1,
       "on_or_off": true,
       "image": "products_images/cb9c411a9e69a1df7fc51f6300bcdaf4.jpg",
       "category": 3
@@ -4491,7 +5340,7 @@ False
    "pk": 1,
    "fields": {
       "password": "pbkdf2_sha256$720000$2q3lL4zgRFfeuegySMUtux$f2HKLzy4lpCR8sfIFZACRUKyppBFULu3pkxm71C31Nc=",
-      "last_login": "2024-05-20T21:00:21.626Z",
+      "last_login": "2024-07-05T19:15:43.747Z",
       "is_superuser": true,
       "username": "admin",
       "first_name": "Назар",
@@ -4501,7 +5350,7 @@ False
       "is_active": true,
       "date_joined": "2024-03-13T15:34:16Z",
       "phone_number": "+79159533544",
-      "loyalty_program": 27805,
+      "loyalty_program": 17804,
       "groups": [],
       "user_permissions": []
    }
@@ -4510,8 +5359,8 @@ False
    "model": "users.user",
    "pk": 2,
    "fields": {
-      "password": "Judo-manga-top-123",
-      "last_login": "2024-05-16T10:35:26Z",
+      "password": "pbkdf2_sha256$720000$2q3lL4zgRFfeuegySMUtux$f2HKLzy4lpCR8sfIFZACRUKyppBFULu3pkxm71C31Nc=",
+      "last_login": "2024-06-09T22:12:32Z",
       "is_superuser": false,
       "username": "Nikralet",
       "first_name": "Назар",
@@ -4524,254 +5373,6 @@ False
       "loyalty_program": 0,
       "groups": [],
       "user_permissions": []
-   }
-},
-{
-   "model": "orders.order",
-   "pk": 269,
-   "fields": {
-      "user": 1,
-      "created_timestamp": "2024-05-13T10:02:59.822Z",
-      "delivery_datetime": "2024-05-13T11:01:00Z",
-      "phone_number": "+79159533544",
-      "requires_delivery": true,
-      "delivery_address": "",
-      "payment_on_get": false,
-      "is_paid": true,
-      "deduct_points": false,
-      "is_add": true,
-      "status": "Создаётся",
-      "total_cost": "1"
-   }
-},
-{
-   "model": "orders.order",
-   "pk": 271,
-   "fields": {
-      "user": 1,
-      "created_timestamp": "2024-05-20T22:14:08.499Z",
-      "delivery_datetime": "2024-05-21T08:00:00Z",
-      "phone_number": "+79159533544",
-      "requires_delivery": false,
-      "delivery_address": "",
-      "payment_on_get": true,
-      "is_paid": false,
-      "deduct_points": false,
-      "is_add": false,
-      "status": "Создаётся",
-      "total_cost": "100"
-   }
-},
-{
-   "model": "orders.order",
-   "pk": 272,
-   "fields": {
-      "user": 1,
-      "created_timestamp": "2024-05-20T22:14:32.354Z",
-      "delivery_datetime": "2024-05-21T08:00:00Z",
-      "phone_number": "+79159533544",
-      "requires_delivery": true,
-      "delivery_address": "",
-      "payment_on_get": true,
-      "is_paid": false,
-      "deduct_points": false,
-      "is_add": false,
-      "status": "Создаётся",
-      "total_cost": "100"
-   }
-},
-{
-   "model": "orders.order",
-   "pk": 273,
-   "fields": {
-      "user": 1,
-      "created_timestamp": "2024-05-21T02:44:30.649Z",
-      "delivery_datetime": "2024-05-21T08:00:00Z",
-      "phone_number": "+79159533544",
-      "requires_delivery": true,
-      "delivery_address": "",
-      "payment_on_get": true,
-      "is_paid": false,
-      "deduct_points": false,
-      "is_add": false,
-      "status": "Создаётся",
-      "total_cost": "1"
-   }
-},
-{
-   "model": "orders.order",
-   "pk": 274,
-   "fields": {
-      "user": 1,
-      "created_timestamp": "2024-05-21T02:46:05.511Z",
-      "delivery_datetime": "2024-05-21T08:00:00Z",
-      "phone_number": "+79159533544",
-      "requires_delivery": true,
-      "delivery_address": "",
-      "payment_on_get": true,
-      "is_paid": false,
-      "deduct_points": false,
-      "is_add": false,
-      "status": "Создаётся",
-      "total_cost": "200"
-   }
-},
-{
-   "model": "orders.order",
-   "pk": 275,
-   "fields": {
-      "user": 1,
-      "created_timestamp": "2024-05-21T02:47:25.998Z",
-      "delivery_datetime": "2024-05-21T08:00:00Z",
-      "phone_number": "+79159533544",
-      "requires_delivery": true,
-      "delivery_address": "",
-      "payment_on_get": true,
-      "is_paid": false,
-      "deduct_points": false,
-      "is_add": false,
-      "status": "Создаётся",
-      "total_cost": "100"
-   }
-},
-{
-   "model": "orders.order",
-   "pk": 276,
-   "fields": {
-      "user": 1,
-      "created_timestamp": "2024-05-22T12:45:52.767Z",
-      "delivery_datetime": "2024-05-22T13:45:00Z",
-      "phone_number": "+79159533544",
-      "requires_delivery": false,
-      "delivery_address": "",
-      "payment_on_get": true,
-      "is_paid": false,
-      "deduct_points": false,
-      "is_add": false,
-      "status": "Создаётся",
-      "total_cost": "2"
-   }
-},
-{
-   "model": "orders.order",
-   "pk": 277,
-   "fields": {
-      "user": 1,
-      "created_timestamp": "2024-05-22T12:47:05.814Z",
-      "delivery_datetime": "2024-05-22T13:47:00Z",
-      "phone_number": "+79159533544",
-      "requires_delivery": false,
-      "delivery_address": "",
-      "payment_on_get": true,
-      "is_paid": false,
-      "deduct_points": false,
-      "is_add": false,
-      "status": "Создаётся",
-      "total_cost": "100"
-   }
-},
-{
-   "model": "orders.orderitem",
-   "pk": 388,
-   "fields": {
-      "order": 269,
-      "product": 1,
-      "name": "Тестовый шашлык",
-      "price": "1",
-      "weight": "1",
-      "quantity": 1,
-      "created_timestamp": "2024-05-13T10:02:59.859Z"
-   }
-},
-{
-   "model": "orders.orderitem",
-   "pk": 390,
-   "fields": {
-      "order": 271,
-      "product": 2,
-      "name": "Борщ",
-      "price": "100",
-      "weight": "123",
-      "quantity": 1,
-      "created_timestamp": "2024-05-20T22:14:08.563Z"
-   }
-},
-{
-   "model": "orders.orderitem",
-   "pk": 391,
-   "fields": {
-      "order": 272,
-      "product": 2,
-      "name": "Борщ",
-      "price": "100",
-      "weight": "123",
-      "quantity": 1,
-      "created_timestamp": "2024-05-20T22:14:32.356Z"
-   }
-},
-{
-   "model": "orders.orderitem",
-   "pk": 392,
-   "fields": {
-      "order": 273,
-      "product": 1,
-      "name": "Тестовый шашлык",
-      "price": "1",
-      "weight": "1",
-      "quantity": 1,
-      "created_timestamp": "2024-05-21T02:44:30.661Z"
-   }
-},
-{
-   "model": "orders.orderitem",
-   "pk": 393,
-   "fields": {
-      "order": 274,
-      "product": 2,
-      "name": "Борщ",
-      "price": "100",
-      "weight": "123",
-      "quantity": 2,
-      "created_timestamp": "2024-05-21T02:46:05.514Z"
-   }
-},
-{
-   "model": "orders.orderitem",
-   "pk": 394,
-   "fields": {
-      "order": 275,
-      "product": 2,
-      "name": "Борщ",
-      "price": "100",
-      "weight": "123",
-      "quantity": 1,
-      "created_timestamp": "2024-05-21T02:47:26.001Z"
-   }
-},
-{
-   "model": "orders.orderitem",
-   "pk": 395,
-   "fields": {
-      "order": 276,
-      "product": 1,
-      "name": "Тестовый шашлык",
-      "price": "1",
-      "weight": "1",
-      "quantity": 2,
-      "created_timestamp": "2024-05-22T12:45:52.788Z"
-   }
-},
-{
-   "model": "orders.orderitem",
-   "pk": 396,
-   "fields": {
-      "order": 277,
-      "product": 2,
-      "name": "Борщ",
-      "price": "100",
-      "weight": "123",
-      "quantity": 1,
-      "created_timestamp": "2024-05-22T12:47:05.819Z"
    }
 }
 ]

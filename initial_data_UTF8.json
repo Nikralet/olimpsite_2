@@ -1,5 +1,4594 @@
 [
 {
+   "model": "admin.logentry",
+   "pk": 1,
+   "fields": {
+      "action_time": "2024-03-15T09:34:30.229Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "admin",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044f\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 2,
+   "fields": {
+      "action_time": "2024-03-15T09:34:49.310Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "admin",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044f\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 3,
+   "fields": {
+      "action_time": "2024-03-15T09:36:07.457Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "admin",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435 \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044f\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 4,
+   "fields": {
+      "action_time": "2024-03-15T19:25:47.398Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "admin",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\", \"\\u041d\\u043e\\u043c\\u0435\\u0440 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\\u0430\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 5,
+   "fields": {
+      "action_time": "2024-03-19T09:33:55.849Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Все",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 6,
+   "fields": {
+      "action_time": "2024-03-19T09:34:04.299Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Блюда на мангале",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 7,
+   "fields": {
+      "action_time": "2024-03-19T09:34:32.509Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Продукт: Тестовый шашлык | Категория: Блюда на мангале",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 8,
+   "fields": {
+      "action_time": "2024-03-19T19:46:53.524Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Супы",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 9,
+   "fields": {
+      "action_time": "2024-03-19T19:47:11.191Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 10,
+   "fields": {
+      "action_time": "2024-04-03T21:56:13.667Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Заказ № 1 | Покупатель Назар Пащанин| Суммарная стоимость: 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 11,
+   "fields": {
+      "action_time": "2024-04-03T21:59:04.507Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Заказ № 1 | Покупатель Назар Пащанин| Суммарная стоимость: 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 12,
+   "fields": {
+      "action_time": "2024-04-03T22:01:49.647Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Заказ № 1 | Покупатель Назар Пащанин| Суммарная стоимость: 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 13,
+   "fields": {
+      "action_time": "2024-04-03T22:02:43.035Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Заказ № 1 | Покупатель Назар Пащанин| Суммарная стоимость: 1",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 14,
+   "fields": {
+      "action_time": "2024-04-03T22:06:44.291Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 15,
+   "fields": {
+      "action_time": "2024-04-03T22:07:08.040Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "admin",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0411\\u0430\\u043b\\u043b\\u044b \\u043f\\u0440\\u043e\\u0433\\u0440\\u0430\\u043c\\u043c\\u044b \\u043b\\u043e\\u044f\\u043b\\u044c\\u043d\\u043e\\u0441\\u0442\\u0438\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 16,
+   "fields": {
+      "action_time": "2024-04-04T09:55:22.545Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "10",
+      "object_repr": "Заказ № 10 | Покупатель Назар Пащанин| Суммарная стоимость: 5002",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u043b\\u0430\\u0447\\u0435\\u043d\\u043e\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 17,
+   "fields": {
+      "action_time": "2024-04-04T09:55:39.963Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 18,
+   "fields": {
+      "action_time": "2024-04-04T10:03:05.643Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Заказ № 15 | Покупатель Назар Пащанин| Суммарная стоимость: 1000",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 19,
+   "fields": {
+      "action_time": "2024-04-04T10:03:05.742Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "14",
+      "object_repr": "Заказ № 14 | Покупатель Назар Пащанин| Суммарная стоимость: 1000",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 20,
+   "fields": {
+      "action_time": "2024-04-04T10:03:05.842Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "13",
+      "object_repr": "Заказ № 13 | Покупатель Назар Пащанин| Суммарная стоимость: 1001",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 21,
+   "fields": {
+      "action_time": "2024-04-04T10:03:05.925Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "12",
+      "object_repr": "Заказ № 12 | Покупатель Назар Пащанин| Суммарная стоимость: 1001",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 22,
+   "fields": {
+      "action_time": "2024-04-04T10:03:06.009Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "11",
+      "object_repr": "Заказ № 11 | Покупатель Назар Пащанин| Суммарная стоимость: 5001",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 23,
+   "fields": {
+      "action_time": "2024-04-04T10:03:06.093Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "10",
+      "object_repr": "Заказ № 10 | Покупатель Назар Пащанин| Суммарная стоимость: 5002",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 24,
+   "fields": {
+      "action_time": "2024-04-04T10:03:06.204Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "9",
+      "object_repr": "Заказ № 9 | Покупатель Назар Пащанин| Суммарная стоимость: 101",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 25,
+   "fields": {
+      "action_time": "2024-04-04T10:03:06.284Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "8",
+      "object_repr": "Заказ № 8 | Покупатель Назар Пащанин| Суммарная стоимость: 101",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 26,
+   "fields": {
+      "action_time": "2024-04-04T10:03:06.378Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "7",
+      "object_repr": "Заказ № 7 | Покупатель Назар Пащанин| Суммарная стоимость: 100",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 27,
+   "fields": {
+      "action_time": "2024-04-04T10:03:06.495Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "6",
+      "object_repr": "Заказ № 6 | Покупатель Назар Пащанин| Суммарная стоимость: 101",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 28,
+   "fields": {
+      "action_time": "2024-04-04T10:03:06.613Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "5",
+      "object_repr": "Заказ № 5 | Покупатель Назар Пащанин| Суммарная стоимость: 1",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 29,
+   "fields": {
+      "action_time": "2024-04-04T10:03:06.717Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "4",
+      "object_repr": "Заказ № 4 | Покупатель Назар Пащанин| Суммарная стоимость: 2",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 30,
+   "fields": {
+      "action_time": "2024-04-04T10:03:06.802Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "3",
+      "object_repr": "Заказ № 3 | Покупатель Назар Пащанин| Суммарная стоимость: 101",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 31,
+   "fields": {
+      "action_time": "2024-04-04T10:03:06.874Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "2",
+      "object_repr": "Заказ № 2 | Покупатель Назар Пащанин| Суммарная стоимость: 5005",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 32,
+   "fields": {
+      "action_time": "2024-04-04T10:03:06.961Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Заказ № 1 | Покупатель Назар Пащанин| Суммарная стоимость: 1",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 33,
+   "fields": {
+      "action_time": "2024-04-04T11:27:44.504Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "27",
+      "object_repr": "Заказ № 27 | Покупатель Назар Пащанин| Суммарная стоимость: 1001| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 34,
+   "fields": {
+      "action_time": "2024-04-04T11:27:44.614Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "26",
+      "object_repr": "Заказ № 26 | Покупатель Назар Пащанин| Суммарная стоимость: 1001| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 35,
+   "fields": {
+      "action_time": "2024-04-04T11:27:44.729Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "25",
+      "object_repr": "Заказ № 25 | Покупатель Назар Пащанин| Суммарная стоимость: 7740| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 36,
+   "fields": {
+      "action_time": "2024-04-04T11:27:44.830Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "24",
+      "object_repr": "Заказ № 24 | Покупатель Назар Пащанин| Суммарная стоимость: 1001| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 37,
+   "fields": {
+      "action_time": "2024-04-04T11:27:44.911Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "23",
+      "object_repr": "Заказ № 23 | Покупатель Назар Пащанин| Суммарная стоимость: 1001| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 38,
+   "fields": {
+      "action_time": "2024-04-04T11:27:45.013Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "22",
+      "object_repr": "Заказ № 22 | Покупатель Назар Пащанин| Суммарная стоимость: 1001| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 39,
+   "fields": {
+      "action_time": "2024-04-04T11:27:45.094Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "21",
+      "object_repr": "Заказ № 21 | Покупатель Назар Пащанин| Суммарная стоимость: 1001| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 40,
+   "fields": {
+      "action_time": "2024-04-04T11:27:45.177Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "20",
+      "object_repr": "Заказ № 20 | Покупатель Назар Пащанин| Суммарная стоимость: 2001| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 41,
+   "fields": {
+      "action_time": "2024-04-04T11:27:45.272Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "19",
+      "object_repr": "Заказ № 19 | Покупатель Назар Пащанин| Суммарная стоимость: 1001| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 42,
+   "fields": {
+      "action_time": "2024-04-04T11:27:45.382Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "18",
+      "object_repr": "Заказ № 18 | Покупатель Назар Пащанин| Суммарная стоимость: 1001| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 43,
+   "fields": {
+      "action_time": "2024-04-04T11:27:45.488Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "17",
+      "object_repr": "Заказ № 17 | Покупатель Назар Пащанин| Суммарная стоимость: 1000| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 44,
+   "fields": {
+      "action_time": "2024-04-04T11:27:45.597Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "16",
+      "object_repr": "Заказ № 16 | Покупатель Назар Пащанин| Суммарная стоимость: 1000| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 45,
+   "fields": {
+      "action_time": "2024-04-04T11:27:50.978Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "28",
+      "object_repr": "Заказ № 28 | Покупатель Назар Пащанин| Суммарная стоимость: 1001| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 46,
+   "fields": {
+      "action_time": "2024-04-04T11:50:15.773Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "30",
+      "object_repr": "Заказ № 30 | Покупатель Назар Пащанин| Суммарная стоимость: 1001| Оплачен True",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u043b\\u0430\\u0447\\u0435\\u043d\\u043e\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 47,
+   "fields": {
+      "action_time": "2024-04-04T12:06:43.876Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "39",
+      "object_repr": "Заказ № 39 | Покупатель Назар Пащанин| Суммарная стоимость: 5000| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 48,
+   "fields": {
+      "action_time": "2024-04-04T12:06:43.988Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "38",
+      "object_repr": "Заказ № 38 | Покупатель Назар Пащанин| Суммарная стоимость: 1005| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 49,
+   "fields": {
+      "action_time": "2024-04-04T12:06:44.083Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "37",
+      "object_repr": "Заказ № 37 | Покупатель Назар Пащанин| Суммарная стоимость: 5006| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 50,
+   "fields": {
+      "action_time": "2024-04-04T12:06:44.180Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "36",
+      "object_repr": "Заказ № 36 | Покупатель Назар Пащанин| Суммарная стоимость: 5000| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 51,
+   "fields": {
+      "action_time": "2024-04-04T12:06:44.275Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "35",
+      "object_repr": "Заказ № 35 | Покупатель Назар Пащанин| Суммарная стоимость: 5000| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 52,
+   "fields": {
+      "action_time": "2024-04-04T12:06:44.372Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "34",
+      "object_repr": "Заказ № 34 | Покупатель Назар Пащанин| Суммарная стоимость: 5000| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 53,
+   "fields": {
+      "action_time": "2024-04-04T12:06:44.481Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "33",
+      "object_repr": "Заказ № 33 | Покупатель Назар Пащанин| Суммарная стоимость: 5000| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 54,
+   "fields": {
+      "action_time": "2024-04-04T12:06:44.573Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "32",
+      "object_repr": "Заказ № 32 | Покупатель Назар Пащанин| Суммарная стоимость: 5001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 55,
+   "fields": {
+      "action_time": "2024-04-04T12:06:44.683Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "31",
+      "object_repr": "Заказ № 31 | Покупатель Назар Пащанин| Суммарная стоимость: 1001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 56,
+   "fields": {
+      "action_time": "2024-04-04T12:06:44.780Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "30",
+      "object_repr": "Заказ № 30 | Покупатель Назар Пащанин| Суммарная стоимость: 1001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 57,
+   "fields": {
+      "action_time": "2024-04-04T12:06:44.889Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "29",
+      "object_repr": "Заказ № 29 | Покупатель Назар Пащанин| Суммарная стоимость: 1000| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 58,
+   "fields": {
+      "action_time": "2024-04-04T12:06:54.840Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "admin",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0411\\u0430\\u043b\\u043b\\u044b \\u043f\\u0440\\u043e\\u0433\\u0440\\u0430\\u043c\\u043c\\u044b \\u043b\\u043e\\u044f\\u043b\\u044c\\u043d\\u043e\\u0441\\u0442\\u0438\"]}}, {\"changed\": {\"name\": \"\\u0417\\u0430\\u043a\\u0430\\u0437\", \"object\": \"\\u0417\\u0430\\u043a\\u0430\\u0437 \\u2116 40 | \\u041f\\u043e\\u043a\\u0443\\u043f\\u0430\\u0442\\u0435\\u043b\\u044c \\u041d\\u0430\\u0437\\u0430\\u0440 \\u041f\\u0430\\u0449\\u0430\\u043d\\u0438\\u043d| \\u0421\\u0443\\u043c\\u043c\\u0430\\u0440\\u043d\\u0430\\u044f \\u0441\\u0442\\u043e\\u0438\\u043c\\u043e\\u0441\\u0442\\u044c: 5000| \\u041e\\u043f\\u043b\\u0430\\u0447\\u0435\\u043d True\", \"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 59,
+   "fields": {
+      "action_time": "2024-04-04T12:07:04.253Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "40",
+      "object_repr": "Заказ № 40 | Покупатель Назар Пащанин| Суммарная стоимость: 5000| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 60,
+   "fields": {
+      "action_time": "2024-05-05T14:41:38.220Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "225",
+      "object_repr": "Заказ № 225 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u043b\\u0430\\u0447\\u0435\\u043d\\u043e\", \"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 61,
+   "fields": {
+      "action_time": "2024-05-05T16:16:10.877Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "224",
+      "object_repr": "Заказ № 224 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 62,
+   "fields": {
+      "action_time": "2024-05-05T16:16:11.008Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "223",
+      "object_repr": "Заказ № 223 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 63,
+   "fields": {
+      "action_time": "2024-05-05T16:16:11.116Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "222",
+      "object_repr": "Заказ № 222 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 64,
+   "fields": {
+      "action_time": "2024-05-05T16:16:11.241Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "221",
+      "object_repr": "Заказ № 221 | Покупатель Назар Пащанин| Суммарная стоимость: 2| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 65,
+   "fields": {
+      "action_time": "2024-05-05T16:16:11.359Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "220",
+      "object_repr": "Заказ № 220 | Покупатель Назар Пащанин| Суммарная стоимость: 0| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 66,
+   "fields": {
+      "action_time": "2024-05-05T16:16:11.466Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "219",
+      "object_repr": "Заказ № 219 | Покупатель Назар Пащанин| Суммарная стоимость: 2| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 67,
+   "fields": {
+      "action_time": "2024-05-05T16:16:11.585Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "218",
+      "object_repr": "Заказ № 218 | Покупатель Назар Пащанин| Суммарная стоимость: 0| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 68,
+   "fields": {
+      "action_time": "2024-05-05T16:16:11.699Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "217",
+      "object_repr": "Заказ № 217 | Покупатель Назар Пащанин| Суммарная стоимость: 2| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 69,
+   "fields": {
+      "action_time": "2024-05-05T16:16:11.800Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "216",
+      "object_repr": "Заказ № 216 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 70,
+   "fields": {
+      "action_time": "2024-05-05T16:16:11.891Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "215",
+      "object_repr": "Заказ № 215 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 71,
+   "fields": {
+      "action_time": "2024-05-05T16:16:11.991Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "214",
+      "object_repr": "Заказ № 214 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 72,
+   "fields": {
+      "action_time": "2024-05-05T16:16:12.091Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "213",
+      "object_repr": "Заказ № 213 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 73,
+   "fields": {
+      "action_time": "2024-05-05T16:16:12.199Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "212",
+      "object_repr": "Заказ № 212 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 74,
+   "fields": {
+      "action_time": "2024-05-05T16:16:12.308Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "211",
+      "object_repr": "Заказ № 211 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 75,
+   "fields": {
+      "action_time": "2024-05-05T16:16:12.449Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "210",
+      "object_repr": "Заказ № 210 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 76,
+   "fields": {
+      "action_time": "2024-05-05T16:16:12.566Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "209",
+      "object_repr": "Заказ № 209 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 77,
+   "fields": {
+      "action_time": "2024-05-05T16:16:12.666Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "208",
+      "object_repr": "Заказ № 208 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 78,
+   "fields": {
+      "action_time": "2024-05-05T16:16:12.775Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "207",
+      "object_repr": "Заказ № 207 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 79,
+   "fields": {
+      "action_time": "2024-05-05T16:16:12.882Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "206",
+      "object_repr": "Заказ № 206 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 80,
+   "fields": {
+      "action_time": "2024-05-05T16:16:12.975Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "205",
+      "object_repr": "Заказ № 205 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 81,
+   "fields": {
+      "action_time": "2024-05-05T16:16:13.069Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "204",
+      "object_repr": "Заказ № 204 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 82,
+   "fields": {
+      "action_time": "2024-05-05T16:16:13.158Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "203",
+      "object_repr": "Заказ № 203 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 83,
+   "fields": {
+      "action_time": "2024-05-05T16:16:13.274Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "202",
+      "object_repr": "Заказ № 202 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 84,
+   "fields": {
+      "action_time": "2024-05-05T16:16:13.366Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "201",
+      "object_repr": "Заказ № 201 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 85,
+   "fields": {
+      "action_time": "2024-05-05T16:16:13.458Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "200",
+      "object_repr": "Заказ № 200 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 86,
+   "fields": {
+      "action_time": "2024-05-05T16:16:13.549Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "199",
+      "object_repr": "Заказ № 199 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 87,
+   "fields": {
+      "action_time": "2024-05-05T16:16:13.658Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "198",
+      "object_repr": "Заказ № 198 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 88,
+   "fields": {
+      "action_time": "2024-05-05T16:16:13.757Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "197",
+      "object_repr": "Заказ № 197 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 89,
+   "fields": {
+      "action_time": "2024-05-05T16:16:13.850Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "196",
+      "object_repr": "Заказ № 196 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 90,
+   "fields": {
+      "action_time": "2024-05-05T16:16:13.941Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "195",
+      "object_repr": "Заказ № 195 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 91,
+   "fields": {
+      "action_time": "2024-05-05T16:16:14.044Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "194",
+      "object_repr": "Заказ № 194 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 92,
+   "fields": {
+      "action_time": "2024-05-05T16:16:14.141Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "193",
+      "object_repr": "Заказ № 193 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 93,
+   "fields": {
+      "action_time": "2024-05-05T16:16:14.251Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "192",
+      "object_repr": "Заказ № 192 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 94,
+   "fields": {
+      "action_time": "2024-05-05T16:16:14.350Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "191",
+      "object_repr": "Заказ № 191 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 95,
+   "fields": {
+      "action_time": "2024-05-05T16:16:14.450Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "190",
+      "object_repr": "Заказ № 190 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 96,
+   "fields": {
+      "action_time": "2024-05-05T16:16:14.532Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "189",
+      "object_repr": "Заказ № 189 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 97,
+   "fields": {
+      "action_time": "2024-05-05T16:16:14.616Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "188",
+      "object_repr": "Заказ № 188 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 98,
+   "fields": {
+      "action_time": "2024-05-05T16:16:14.699Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "187",
+      "object_repr": "Заказ № 187 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 99,
+   "fields": {
+      "action_time": "2024-05-05T16:16:14.782Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "186",
+      "object_repr": "Заказ № 186 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 100,
+   "fields": {
+      "action_time": "2024-05-05T16:16:14.874Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "185",
+      "object_repr": "Заказ № 185 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 101,
+   "fields": {
+      "action_time": "2024-05-05T16:16:14.974Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "184",
+      "object_repr": "Заказ № 184 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 102,
+   "fields": {
+      "action_time": "2024-05-05T16:16:15.058Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "183",
+      "object_repr": "Заказ № 183 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 103,
+   "fields": {
+      "action_time": "2024-05-05T16:16:15.157Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "182",
+      "object_repr": "Заказ № 182 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 104,
+   "fields": {
+      "action_time": "2024-05-05T16:16:15.250Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "181",
+      "object_repr": "Заказ № 181 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 105,
+   "fields": {
+      "action_time": "2024-05-05T16:16:15.349Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "180",
+      "object_repr": "Заказ № 180 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 106,
+   "fields": {
+      "action_time": "2024-05-05T16:16:15.450Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "179",
+      "object_repr": "Заказ № 179 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 107,
+   "fields": {
+      "action_time": "2024-05-05T16:16:15.540Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "178",
+      "object_repr": "Заказ № 178 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 108,
+   "fields": {
+      "action_time": "2024-05-05T16:16:15.641Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "177",
+      "object_repr": "Заказ № 177 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 109,
+   "fields": {
+      "action_time": "2024-05-05T16:16:15.740Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "176",
+      "object_repr": "Заказ № 176 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 110,
+   "fields": {
+      "action_time": "2024-05-05T16:16:15.858Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "175",
+      "object_repr": "Заказ № 175 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 111,
+   "fields": {
+      "action_time": "2024-05-05T16:16:15.941Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "174",
+      "object_repr": "Заказ № 174 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 112,
+   "fields": {
+      "action_time": "2024-05-05T16:16:16.016Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "173",
+      "object_repr": "Заказ № 173 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 113,
+   "fields": {
+      "action_time": "2024-05-05T16:16:16.099Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "172",
+      "object_repr": "Заказ № 172 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 114,
+   "fields": {
+      "action_time": "2024-05-05T16:16:16.182Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "171",
+      "object_repr": "Заказ № 171 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 115,
+   "fields": {
+      "action_time": "2024-05-05T16:16:16.266Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "170",
+      "object_repr": "Заказ № 170 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 116,
+   "fields": {
+      "action_time": "2024-05-05T16:16:16.349Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "169",
+      "object_repr": "Заказ № 169 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 117,
+   "fields": {
+      "action_time": "2024-05-05T16:16:16.440Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "168",
+      "object_repr": "Заказ № 168 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 118,
+   "fields": {
+      "action_time": "2024-05-05T16:16:16.524Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "167",
+      "object_repr": "Заказ № 167 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 119,
+   "fields": {
+      "action_time": "2024-05-05T16:16:16.616Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "166",
+      "object_repr": "Заказ № 166 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 120,
+   "fields": {
+      "action_time": "2024-05-05T16:16:16.707Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "165",
+      "object_repr": "Заказ № 165 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 121,
+   "fields": {
+      "action_time": "2024-05-05T16:16:16.799Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "164",
+      "object_repr": "Заказ № 164 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 122,
+   "fields": {
+      "action_time": "2024-05-05T16:16:16.899Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "163",
+      "object_repr": "Заказ № 163 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 123,
+   "fields": {
+      "action_time": "2024-05-05T16:16:16.990Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "162",
+      "object_repr": "Заказ № 162 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 124,
+   "fields": {
+      "action_time": "2024-05-05T16:16:17.082Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "161",
+      "object_repr": "Заказ № 161 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 125,
+   "fields": {
+      "action_time": "2024-05-05T16:16:17.174Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "160",
+      "object_repr": "Заказ № 160 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 126,
+   "fields": {
+      "action_time": "2024-05-05T16:16:17.281Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "159",
+      "object_repr": "Заказ № 159 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 127,
+   "fields": {
+      "action_time": "2024-05-05T16:16:17.382Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "158",
+      "object_repr": "Заказ № 158 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 128,
+   "fields": {
+      "action_time": "2024-05-05T16:16:17.474Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "157",
+      "object_repr": "Заказ № 157 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 129,
+   "fields": {
+      "action_time": "2024-05-05T16:16:17.574Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "156",
+      "object_repr": "Заказ № 156 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 130,
+   "fields": {
+      "action_time": "2024-05-05T16:16:17.673Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "155",
+      "object_repr": "Заказ № 155 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 131,
+   "fields": {
+      "action_time": "2024-05-05T16:16:17.774Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "154",
+      "object_repr": "Заказ № 154 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 132,
+   "fields": {
+      "action_time": "2024-05-05T16:16:17.874Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "153",
+      "object_repr": "Заказ № 153 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 133,
+   "fields": {
+      "action_time": "2024-05-05T16:16:17.974Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "152",
+      "object_repr": "Заказ № 152 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 134,
+   "fields": {
+      "action_time": "2024-05-05T16:16:18.082Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "151",
+      "object_repr": "Заказ № 151 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 135,
+   "fields": {
+      "action_time": "2024-05-05T16:16:18.200Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "150",
+      "object_repr": "Заказ № 150 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 136,
+   "fields": {
+      "action_time": "2024-05-05T16:16:18.306Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "149",
+      "object_repr": "Заказ № 149 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 137,
+   "fields": {
+      "action_time": "2024-05-05T16:16:18.415Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "148",
+      "object_repr": "Заказ № 148 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 138,
+   "fields": {
+      "action_time": "2024-05-05T16:16:18.532Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "147",
+      "object_repr": "Заказ № 147 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 139,
+   "fields": {
+      "action_time": "2024-05-05T16:16:18.640Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "146",
+      "object_repr": "Заказ № 146 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 140,
+   "fields": {
+      "action_time": "2024-05-05T16:16:18.757Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "145",
+      "object_repr": "Заказ № 145 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 141,
+   "fields": {
+      "action_time": "2024-05-05T16:16:18.873Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "144",
+      "object_repr": "Заказ № 144 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 142,
+   "fields": {
+      "action_time": "2024-05-05T16:16:18.974Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "143",
+      "object_repr": "Заказ № 143 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 143,
+   "fields": {
+      "action_time": "2024-05-05T16:16:19.065Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "142",
+      "object_repr": "Заказ № 142 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 144,
+   "fields": {
+      "action_time": "2024-05-05T16:16:19.165Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "141",
+      "object_repr": "Заказ № 141 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 145,
+   "fields": {
+      "action_time": "2024-05-05T16:16:19.265Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "140",
+      "object_repr": "Заказ № 140 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 146,
+   "fields": {
+      "action_time": "2024-05-05T16:16:19.374Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "139",
+      "object_repr": "Заказ № 139 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 147,
+   "fields": {
+      "action_time": "2024-05-05T16:16:19.482Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "138",
+      "object_repr": "Заказ № 138 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 148,
+   "fields": {
+      "action_time": "2024-05-05T16:16:19.582Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "137",
+      "object_repr": "Заказ № 137 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 149,
+   "fields": {
+      "action_time": "2024-05-05T16:16:19.682Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "136",
+      "object_repr": "Заказ № 136 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 150,
+   "fields": {
+      "action_time": "2024-05-05T16:16:19.783Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "135",
+      "object_repr": "Заказ № 135 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 151,
+   "fields": {
+      "action_time": "2024-05-05T16:16:19.882Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "134",
+      "object_repr": "Заказ № 134 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 152,
+   "fields": {
+      "action_time": "2024-05-05T16:16:19.974Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "133",
+      "object_repr": "Заказ № 133 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 153,
+   "fields": {
+      "action_time": "2024-05-05T16:16:20.074Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "132",
+      "object_repr": "Заказ № 132 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 154,
+   "fields": {
+      "action_time": "2024-05-05T16:16:20.156Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "131",
+      "object_repr": "Заказ № 131 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 155,
+   "fields": {
+      "action_time": "2024-05-05T16:16:20.248Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "130",
+      "object_repr": "Заказ № 130 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 156,
+   "fields": {
+      "action_time": "2024-05-05T16:16:20.341Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "129",
+      "object_repr": "Заказ № 129 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 157,
+   "fields": {
+      "action_time": "2024-05-05T16:16:20.440Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "128",
+      "object_repr": "Заказ № 128 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 158,
+   "fields": {
+      "action_time": "2024-05-05T16:16:20.540Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "127",
+      "object_repr": "Заказ № 127 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 159,
+   "fields": {
+      "action_time": "2024-05-05T16:16:20.640Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "126",
+      "object_repr": "Заказ № 126 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 160,
+   "fields": {
+      "action_time": "2024-05-05T16:16:20.740Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "125",
+      "object_repr": "Заказ № 125 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 161,
+   "fields": {
+      "action_time": "2024-05-05T16:16:20.841Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "124",
+      "object_repr": "Заказ № 124 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 162,
+   "fields": {
+      "action_time": "2024-05-05T16:16:20.949Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "123",
+      "object_repr": "Заказ № 123 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 163,
+   "fields": {
+      "action_time": "2024-05-05T16:16:21.057Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "122",
+      "object_repr": "Заказ № 122 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 164,
+   "fields": {
+      "action_time": "2024-05-05T16:16:21.165Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "121",
+      "object_repr": "Заказ № 121 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 165,
+   "fields": {
+      "action_time": "2024-05-05T16:16:21.265Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "120",
+      "object_repr": "Заказ № 120 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 166,
+   "fields": {
+      "action_time": "2024-05-05T16:16:21.398Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "119",
+      "object_repr": "Заказ № 119 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 167,
+   "fields": {
+      "action_time": "2024-05-05T16:16:21.499Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "118",
+      "object_repr": "Заказ № 118 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 168,
+   "fields": {
+      "action_time": "2024-05-05T16:16:21.599Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "117",
+      "object_repr": "Заказ № 117 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 169,
+   "fields": {
+      "action_time": "2024-05-05T16:16:21.698Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "116",
+      "object_repr": "Заказ № 116 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 170,
+   "fields": {
+      "action_time": "2024-05-05T16:16:21.798Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "115",
+      "object_repr": "Заказ № 115 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 171,
+   "fields": {
+      "action_time": "2024-05-05T16:16:21.908Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "114",
+      "object_repr": "Заказ № 114 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 172,
+   "fields": {
+      "action_time": "2024-05-05T16:16:22.023Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "113",
+      "object_repr": "Заказ № 113 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 173,
+   "fields": {
+      "action_time": "2024-05-05T16:16:22.115Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "112",
+      "object_repr": "Заказ № 112 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 174,
+   "fields": {
+      "action_time": "2024-05-05T16:16:22.215Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "111",
+      "object_repr": "Заказ № 111 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 175,
+   "fields": {
+      "action_time": "2024-05-05T16:16:22.373Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "110",
+      "object_repr": "Заказ № 110 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 176,
+   "fields": {
+      "action_time": "2024-05-05T16:16:22.464Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "109",
+      "object_repr": "Заказ № 109 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 177,
+   "fields": {
+      "action_time": "2024-05-05T16:16:22.556Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "108",
+      "object_repr": "Заказ № 108 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 178,
+   "fields": {
+      "action_time": "2024-05-05T16:16:22.657Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "107",
+      "object_repr": "Заказ № 107 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 179,
+   "fields": {
+      "action_time": "2024-05-05T16:16:22.757Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "106",
+      "object_repr": "Заказ № 106 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 180,
+   "fields": {
+      "action_time": "2024-05-05T16:16:22.848Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "105",
+      "object_repr": "Заказ № 105 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 181,
+   "fields": {
+      "action_time": "2024-05-05T16:16:22.948Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "104",
+      "object_repr": "Заказ № 104 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 182,
+   "fields": {
+      "action_time": "2024-05-05T16:16:23.049Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "103",
+      "object_repr": "Заказ № 103 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 183,
+   "fields": {
+      "action_time": "2024-05-05T16:16:23.165Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "102",
+      "object_repr": "Заказ № 102 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 184,
+   "fields": {
+      "action_time": "2024-05-05T16:16:23.273Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "101",
+      "object_repr": "Заказ № 101 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 185,
+   "fields": {
+      "action_time": "2024-05-05T16:16:23.381Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "100",
+      "object_repr": "Заказ № 100 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 186,
+   "fields": {
+      "action_time": "2024-05-05T16:16:23.490Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "99",
+      "object_repr": "Заказ № 99 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 187,
+   "fields": {
+      "action_time": "2024-05-05T16:16:23.598Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "98",
+      "object_repr": "Заказ № 98 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 188,
+   "fields": {
+      "action_time": "2024-05-05T16:16:23.756Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "97",
+      "object_repr": "Заказ № 97 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 189,
+   "fields": {
+      "action_time": "2024-05-05T16:16:23.857Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "96",
+      "object_repr": "Заказ № 96 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 190,
+   "fields": {
+      "action_time": "2024-05-05T16:16:23.947Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "95",
+      "object_repr": "Заказ № 95 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 191,
+   "fields": {
+      "action_time": "2024-05-05T16:16:24.083Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "94",
+      "object_repr": "Заказ № 94 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 192,
+   "fields": {
+      "action_time": "2024-05-05T16:16:24.206Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "93",
+      "object_repr": "Заказ № 93 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 193,
+   "fields": {
+      "action_time": "2024-05-05T16:16:24.348Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "92",
+      "object_repr": "Заказ № 92 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 194,
+   "fields": {
+      "action_time": "2024-05-05T16:16:24.489Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "91",
+      "object_repr": "Заказ № 91 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 195,
+   "fields": {
+      "action_time": "2024-05-05T16:16:24.581Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "90",
+      "object_repr": "Заказ № 90 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 196,
+   "fields": {
+      "action_time": "2024-05-05T16:16:24.749Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "89",
+      "object_repr": "Заказ № 89 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 197,
+   "fields": {
+      "action_time": "2024-05-05T16:16:24.939Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "88",
+      "object_repr": "Заказ № 88 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 198,
+   "fields": {
+      "action_time": "2024-05-05T16:16:25.140Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "87",
+      "object_repr": "Заказ № 87 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 199,
+   "fields": {
+      "action_time": "2024-05-05T16:16:25.248Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "86",
+      "object_repr": "Заказ № 86 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 200,
+   "fields": {
+      "action_time": "2024-05-05T16:16:25.398Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "85",
+      "object_repr": "Заказ № 85 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 201,
+   "fields": {
+      "action_time": "2024-05-05T16:16:25.517Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "84",
+      "object_repr": "Заказ № 84 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 202,
+   "fields": {
+      "action_time": "2024-05-05T16:16:25.700Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "83",
+      "object_repr": "Заказ № 83 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 203,
+   "fields": {
+      "action_time": "2024-05-05T16:16:25.809Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "82",
+      "object_repr": "Заказ № 82 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 204,
+   "fields": {
+      "action_time": "2024-05-05T16:16:25.909Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "81",
+      "object_repr": "Заказ № 81 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 205,
+   "fields": {
+      "action_time": "2024-05-05T16:16:26.025Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "80",
+      "object_repr": "Заказ № 80 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 206,
+   "fields": {
+      "action_time": "2024-05-05T16:16:26.184Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "79",
+      "object_repr": "Заказ № 79 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 207,
+   "fields": {
+      "action_time": "2024-05-05T16:16:26.335Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "78",
+      "object_repr": "Заказ № 78 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 208,
+   "fields": {
+      "action_time": "2024-05-05T16:16:26.433Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "77",
+      "object_repr": "Заказ № 77 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 209,
+   "fields": {
+      "action_time": "2024-05-05T16:16:26.534Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "76",
+      "object_repr": "Заказ № 76 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 210,
+   "fields": {
+      "action_time": "2024-05-05T16:16:26.634Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "75",
+      "object_repr": "Заказ № 75 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 211,
+   "fields": {
+      "action_time": "2024-05-05T16:16:26.800Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "74",
+      "object_repr": "Заказ № 74 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 212,
+   "fields": {
+      "action_time": "2024-05-05T16:16:26.967Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "73",
+      "object_repr": "Заказ № 73 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 213,
+   "fields": {
+      "action_time": "2024-05-05T16:16:27.076Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "72",
+      "object_repr": "Заказ № 72 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 214,
+   "fields": {
+      "action_time": "2024-05-05T16:16:27.217Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "71",
+      "object_repr": "Заказ № 71 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 215,
+   "fields": {
+      "action_time": "2024-05-05T16:16:27.367Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "70",
+      "object_repr": "Заказ № 70 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 216,
+   "fields": {
+      "action_time": "2024-05-05T16:16:27.497Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "69",
+      "object_repr": "Заказ № 69 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 217,
+   "fields": {
+      "action_time": "2024-05-05T16:16:27.733Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "68",
+      "object_repr": "Заказ № 68 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 218,
+   "fields": {
+      "action_time": "2024-05-05T16:16:27.917Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "67",
+      "object_repr": "Заказ № 67 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 219,
+   "fields": {
+      "action_time": "2024-05-05T16:16:28.098Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "66",
+      "object_repr": "Заказ № 66 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 220,
+   "fields": {
+      "action_time": "2024-05-05T16:16:28.209Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "65",
+      "object_repr": "Заказ № 65 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 221,
+   "fields": {
+      "action_time": "2024-05-05T16:16:28.400Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "64",
+      "object_repr": "Заказ № 64 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 222,
+   "fields": {
+      "action_time": "2024-05-05T16:16:28.575Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "63",
+      "object_repr": "Заказ № 63 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 223,
+   "fields": {
+      "action_time": "2024-05-05T16:16:28.740Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "62",
+      "object_repr": "Заказ № 62 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 224,
+   "fields": {
+      "action_time": "2024-05-05T16:16:28.922Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "61",
+      "object_repr": "Заказ № 61 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 225,
+   "fields": {
+      "action_time": "2024-05-05T16:16:29.147Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "60",
+      "object_repr": "Заказ № 60 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 226,
+   "fields": {
+      "action_time": "2024-05-05T16:16:29.365Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "59",
+      "object_repr": "Заказ № 59 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 227,
+   "fields": {
+      "action_time": "2024-05-05T16:16:29.498Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "58",
+      "object_repr": "Заказ № 58 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 228,
+   "fields": {
+      "action_time": "2024-05-05T16:16:29.690Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "57",
+      "object_repr": "Заказ № 57 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 229,
+   "fields": {
+      "action_time": "2024-05-05T16:16:29.890Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "56",
+      "object_repr": "Заказ № 56 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 230,
+   "fields": {
+      "action_time": "2024-05-05T16:16:30.089Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "55",
+      "object_repr": "Заказ № 55 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 231,
+   "fields": {
+      "action_time": "2024-05-05T16:16:30.289Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "54",
+      "object_repr": "Заказ № 54 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 232,
+   "fields": {
+      "action_time": "2024-05-05T16:16:30.447Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "53",
+      "object_repr": "Заказ № 53 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 233,
+   "fields": {
+      "action_time": "2024-05-05T16:16:30.615Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "52",
+      "object_repr": "Заказ № 52 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 234,
+   "fields": {
+      "action_time": "2024-05-05T16:16:30.773Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "51",
+      "object_repr": "Заказ № 51 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 235,
+   "fields": {
+      "action_time": "2024-05-05T16:16:30.932Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "50",
+      "object_repr": "Заказ № 50 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 236,
+   "fields": {
+      "action_time": "2024-05-05T16:16:31.107Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "49",
+      "object_repr": "Заказ № 49 | Покупатель Назар Пащанин| Суммарная стоимость: 8001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 237,
+   "fields": {
+      "action_time": "2024-05-05T16:16:31.273Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "48",
+      "object_repr": "Заказ № 48 | Покупатель Назар Пащанин| Суммарная стоимость: 3001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 238,
+   "fields": {
+      "action_time": "2024-05-05T16:16:31.439Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "47",
+      "object_repr": "Заказ № 47 | Покупатель Назар Пащанин| Суммарная стоимость: 3001| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 239,
+   "fields": {
+      "action_time": "2024-05-05T16:16:31.548Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "46",
+      "object_repr": "Заказ № 46 | Покупатель Назар Пащанин| Суммарная стоимость: 1001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 240,
+   "fields": {
+      "action_time": "2024-05-05T16:16:31.706Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "45",
+      "object_repr": "Заказ № 45 | Покупатель Назар Пащанин| Суммарная стоимость: 1001| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 241,
+   "fields": {
+      "action_time": "2024-05-05T16:16:31.856Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "44",
+      "object_repr": "Заказ № 44 | Покупатель Назар Пащанин| Суммарная стоимость: 0| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 242,
+   "fields": {
+      "action_time": "2024-05-05T16:16:32.023Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "43",
+      "object_repr": "Заказ № 43 | Покупатель Назар Пащанин| Суммарная стоимость: 0| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 243,
+   "fields": {
+      "action_time": "2024-05-05T16:16:32.139Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "42",
+      "object_repr": "Заказ № 42 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 244,
+   "fields": {
+      "action_time": "2024-05-05T16:16:32.298Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "41",
+      "object_repr": "Заказ № 41 | Покупатель Назар Пащанин| Суммарная стоимость: 1000| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 245,
+   "fields": {
+      "action_time": "2024-05-13T10:06:23.848Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 246,
+   "fields": {
+      "action_time": "2024-05-16T10:37:47.929Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Nikralet",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Password\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 247,
+   "fields": {
+      "action_time": "2024-05-20T23:04:41.620Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "270",
+      "object_repr": "Заказ № 270 | Покупатель Назар Пащанин| Суммарная стоимость: 100| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 248,
+   "fields": {
+      "action_time": "2024-05-22T13:40:36.763Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "268",
+      "object_repr": "Заказ № 268 | Покупатель Назар Пащанин| Суммарная стоимость: 3001| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 249,
+   "fields": {
+      "action_time": "2024-05-22T13:40:36.882Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "267",
+      "object_repr": "Заказ № 267 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 250,
+   "fields": {
+      "action_time": "2024-05-22T13:40:36.976Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "266",
+      "object_repr": "Заказ № 266 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 251,
+   "fields": {
+      "action_time": "2024-05-22T13:40:37.073Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "265",
+      "object_repr": "Заказ № 265 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 252,
+   "fields": {
+      "action_time": "2024-05-22T13:40:37.156Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "264",
+      "object_repr": "Заказ № 264 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 253,
+   "fields": {
+      "action_time": "2024-05-22T13:40:37.252Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "263",
+      "object_repr": "Заказ № 263 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 254,
+   "fields": {
+      "action_time": "2024-05-22T13:40:37.343Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "262",
+      "object_repr": "Заказ № 262 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 255,
+   "fields": {
+      "action_time": "2024-05-22T13:40:37.435Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "261",
+      "object_repr": "Заказ № 261 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 256,
+   "fields": {
+      "action_time": "2024-05-22T13:40:37.529Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "260",
+      "object_repr": "Заказ № 260 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 257,
+   "fields": {
+      "action_time": "2024-05-22T13:40:37.626Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "259",
+      "object_repr": "Заказ № 259 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 258,
+   "fields": {
+      "action_time": "2024-05-22T13:40:37.719Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "258",
+      "object_repr": "Заказ № 258 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 259,
+   "fields": {
+      "action_time": "2024-05-22T13:40:37.810Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "257",
+      "object_repr": "Заказ № 257 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 260,
+   "fields": {
+      "action_time": "2024-05-22T13:40:37.894Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "256",
+      "object_repr": "Заказ № 256 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 261,
+   "fields": {
+      "action_time": "2024-05-22T13:40:37.976Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "255",
+      "object_repr": "Заказ № 255 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 262,
+   "fields": {
+      "action_time": "2024-05-22T13:40:38.068Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "254",
+      "object_repr": "Заказ № 254 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 263,
+   "fields": {
+      "action_time": "2024-05-22T13:40:38.177Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "253",
+      "object_repr": "Заказ № 253 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 264,
+   "fields": {
+      "action_time": "2024-05-22T13:40:38.260Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "252",
+      "object_repr": "Заказ № 252 | Покупатель Назар Пащанин| Суммарная стоимость: 3| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 265,
+   "fields": {
+      "action_time": "2024-05-22T13:40:38.344Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "251",
+      "object_repr": "Заказ № 251 | Покупатель Назар Пащанин| Суммарная стоимость: 3| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 266,
+   "fields": {
+      "action_time": "2024-05-22T13:40:38.435Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "250",
+      "object_repr": "Заказ № 250 | Покупатель Назар Пащанин| Суммарная стоимость: 3| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 267,
+   "fields": {
+      "action_time": "2024-05-22T13:40:38.544Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "249",
+      "object_repr": "Заказ № 249 | Покупатель Назар Пащанин| Суммарная стоимость: 3| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 268,
+   "fields": {
+      "action_time": "2024-05-22T13:40:38.627Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "248",
+      "object_repr": "Заказ № 248 | Покупатель Назар Пащанин| Суммарная стоимость: 3| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 269,
+   "fields": {
+      "action_time": "2024-05-22T13:40:38.727Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "247",
+      "object_repr": "Заказ № 247 | Покупатель Назар Пащанин| Суммарная стоимость: 3| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 270,
+   "fields": {
+      "action_time": "2024-05-22T13:40:38.812Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "246",
+      "object_repr": "Заказ № 246 | Покупатель Назар Пащанин| Суммарная стоимость: 3| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 271,
+   "fields": {
+      "action_time": "2024-05-22T13:40:38.935Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "245",
+      "object_repr": "Заказ № 245 | Покупатель Назар Пащанин| Суммарная стоимость: 3| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 272,
+   "fields": {
+      "action_time": "2024-05-22T13:40:39.060Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "244",
+      "object_repr": "Заказ № 244 | Покупатель Назар Пащанин| Суммарная стоимость: 3| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 273,
+   "fields": {
+      "action_time": "2024-05-22T13:40:39.158Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "243",
+      "object_repr": "Заказ № 243 | Покупатель Назар Пащанин| Суммарная стоимость: 3| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 274,
+   "fields": {
+      "action_time": "2024-05-22T13:40:39.252Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "242",
+      "object_repr": "Заказ № 242 | Покупатель Назар Пащанин| Суммарная стоимость: 3| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 275,
+   "fields": {
+      "action_time": "2024-05-22T13:40:39.343Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "241",
+      "object_repr": "Заказ № 241 | Покупатель Назар Пащанин| Суммарная стоимость: 3| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 276,
+   "fields": {
+      "action_time": "2024-05-22T13:40:39.435Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "240",
+      "object_repr": "Заказ № 240 | Покупатель Назар Пащанин| Суммарная стоимость: 3| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 277,
+   "fields": {
+      "action_time": "2024-05-22T13:40:39.527Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "239",
+      "object_repr": "Заказ № 239 | Покупатель Назар Пащанин| Суммарная стоимость: 3| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 278,
+   "fields": {
+      "action_time": "2024-05-22T13:40:39.610Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "238",
+      "object_repr": "Заказ № 238 | Покупатель Назар Пащанин| Суммарная стоимость: 3| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 279,
+   "fields": {
+      "action_time": "2024-05-22T13:40:39.702Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "237",
+      "object_repr": "Заказ № 237 | Покупатель Назар Пащанин| Суммарная стоимость: 3| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 280,
+   "fields": {
+      "action_time": "2024-05-22T13:40:39.785Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "236",
+      "object_repr": "Заказ № 236 | Покупатель Назар Пащанин| Суммарная стоимость: 3| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 281,
+   "fields": {
+      "action_time": "2024-05-22T13:40:39.881Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "235",
+      "object_repr": "Заказ № 235 | Покупатель Назар Пащанин| Суммарная стоимость: 3| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 282,
+   "fields": {
+      "action_time": "2024-05-22T13:40:39.961Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "234",
+      "object_repr": "Заказ № 234 | Покупатель Назар Пащанин| Суммарная стоимость: 3| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 283,
+   "fields": {
+      "action_time": "2024-05-22T13:40:40.051Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "233",
+      "object_repr": "Заказ № 233 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 284,
+   "fields": {
+      "action_time": "2024-05-22T13:40:40.135Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "232",
+      "object_repr": "Заказ № 232 | Покупатель Назар Пащанин| Суммарная стоимость: 0| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 285,
+   "fields": {
+      "action_time": "2024-05-22T13:40:40.218Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "231",
+      "object_repr": "Заказ № 231 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 286,
+   "fields": {
+      "action_time": "2024-05-22T13:40:40.293Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "230",
+      "object_repr": "Заказ № 230 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 287,
+   "fields": {
+      "action_time": "2024-05-22T13:40:40.379Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "229",
+      "object_repr": "Заказ № 229 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 288,
+   "fields": {
+      "action_time": "2024-05-22T13:40:40.478Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "228",
+      "object_repr": "Заказ № 228 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 289,
+   "fields": {
+      "action_time": "2024-05-22T13:40:40.578Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "227",
+      "object_repr": "Заказ № 227 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 290,
+   "fields": {
+      "action_time": "2024-05-22T13:40:40.660Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "226",
+      "object_repr": "Заказ № 226 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 291,
+   "fields": {
+      "action_time": "2024-05-22T13:40:40.756Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "225",
+      "object_repr": "Заказ № 225 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 292,
+   "fields": {
+      "action_time": "2024-06-09T20:42:19.921Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Nikralet",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Password\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 293,
+   "fields": {
+      "action_time": "2024-06-09T22:22:25.881Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Nikralet",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0411\\u0430\\u043b\\u043b\\u044b \\u043f\\u0440\\u043e\\u0433\\u0440\\u0430\\u043c\\u043c\\u044b \\u043b\\u043e\\u044f\\u043b\\u044c\\u043d\\u043e\\u0441\\u0442\\u0438\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 294,
+   "fields": {
+      "action_time": "2024-06-09T22:22:29.342Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Nikralet",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0411\\u0430\\u043b\\u043b\\u044b \\u043f\\u0440\\u043e\\u0433\\u0440\\u0430\\u043c\\u043c\\u044b \\u043b\\u043e\\u044f\\u043b\\u044c\\u043d\\u043e\\u0441\\u0442\\u0438\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 295,
+   "fields": {
+      "action_time": "2024-06-21T16:41:50.814Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 296,
+   "fields": {
+      "action_time": "2024-06-21T16:41:58.783Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Продукт: Тестовый шашлык | Категория: Блюда на мангале",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 297,
+   "fields": {
+      "action_time": "2024-06-21T16:45:50.953Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Продукт: Тестовый шашлык | Категория: Блюда на мангале",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u0435\\u0441\", \"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 298,
+   "fields": {
+      "action_time": "2024-07-05T19:39:24.854Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщgg | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 299,
+   "fields": {
+      "action_time": "2024-07-05T19:39:30.346Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщgg | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 300,
+   "fields": {
+      "action_time": "2024-07-05T19:39:43.496Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 301,
+   "fields": {
+      "action_time": "2024-07-05T19:39:51.099Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борща | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 302,
+   "fields": {
+      "action_time": "2024-07-05T19:43:24.079Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщец | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 303,
+   "fields": {
+      "action_time": "2024-07-05T19:45:57.889Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 304,
+   "fields": {
+      "action_time": "2024-07-05T19:46:57.634Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"URL\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 305,
+   "fields": {
+      "action_time": "2024-07-05T19:51:55.927Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Продукт: Тестовый шашлык | Категория: Блюда на мангале",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0430\\u0441\\u0441\\u0430\", \"\\u041c\\u0438\\u043d. \\u043a\\u043e\\u043b-\\u0432\\u043e \\u043f\\u043e \\u043c\\u0430\\u0441\\u0441\\u0435\", \"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 306,
+   "fields": {
+      "action_time": "2024-07-05T20:42:23.825Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0438\\u043d. \\u043a\\u043e\\u043b-\\u0432\\u043e \\u043f\\u043e \\u043c\\u0430\\u0441\\u0441\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 307,
+   "fields": {
+      "action_time": "2024-07-05T21:23:48.499Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0430\\u0441\\u0441\\u0430\", \"\\u041c\\u0438\\u043d. \\u043a\\u043e\\u043b-\\u0432\\u043e \\u043f\\u043e \\u043c\\u0430\\u0441\\u0441\\u0435\", \"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 308,
+   "fields": {
+      "action_time": "2024-07-05T21:24:04.618Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0430\\u0441\\u0441\\u0430\", \"\\u041c\\u0438\\u043d. \\u043a\\u043e\\u043b-\\u0432\\u043e \\u043f\\u043e \\u043c\\u0430\\u0441\\u0441\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 309,
+   "fields": {
+      "action_time": "2024-07-05T21:24:11.657Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0438\\u043d. \\u043a\\u043e\\u043b-\\u0432\\u043e \\u043f\\u043e \\u043c\\u0430\\u0441\\u0441\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 310,
+   "fields": {
+      "action_time": "2024-07-05T21:25:58.648Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Продукт: Борщ | Категория: Супы",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0438\\u043d. \\u043a\\u043e\\u043b-\\u0432\\u043e \\u043f\\u043e \\u043c\\u0430\\u0441\\u0441\\u0435\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 311,
+   "fields": {
+      "action_time": "2024-07-06T12:57:11.684Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "411",
+      "object_repr": "Товар Борщ | Заказ № 289",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 312,
+   "fields": {
+      "action_time": "2024-07-06T12:57:11.792Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "410",
+      "object_repr": "Товар Борщ | Заказ № 288",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 313,
+   "fields": {
+      "action_time": "2024-07-06T12:57:11.896Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "409",
+      "object_repr": "Товар Борщ | Заказ № 287",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 314,
+   "fields": {
+      "action_time": "2024-07-06T12:57:12.004Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "408",
+      "object_repr": "Товар Борщ | Заказ № 286",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 315,
+   "fields": {
+      "action_time": "2024-07-06T12:57:12.096Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "407",
+      "object_repr": "Товар Борщ | Заказ № 285",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 316,
+   "fields": {
+      "action_time": "2024-07-06T12:57:12.197Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "406",
+      "object_repr": "Товар Борщ | Заказ № 284",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 317,
+   "fields": {
+      "action_time": "2024-07-06T12:57:12.330Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "405",
+      "object_repr": "Товар Борщ | Заказ № 283",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 318,
+   "fields": {
+      "action_time": "2024-07-06T12:57:12.433Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "404",
+      "object_repr": "Товар Борщ | Заказ № 282",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 319,
+   "fields": {
+      "action_time": "2024-07-06T12:57:12.546Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "403",
+      "object_repr": "Товар Борщ | Заказ № 281",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 320,
+   "fields": {
+      "action_time": "2024-07-06T12:57:12.670Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "402",
+      "object_repr": "Товар Борщ | Заказ № 280",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 321,
+   "fields": {
+      "action_time": "2024-07-06T12:57:12.805Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "401",
+      "object_repr": "Товар Тестовый шашлык | Заказ № 280",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 322,
+   "fields": {
+      "action_time": "2024-07-06T12:57:12.937Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "400",
+      "object_repr": "Товар Борщ | Заказ № 279",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 323,
+   "fields": {
+      "action_time": "2024-07-06T12:57:13.069Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "399",
+      "object_repr": "Товар Тестовый шашлык | Заказ № 279",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 324,
+   "fields": {
+      "action_time": "2024-07-06T12:57:13.167Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "398",
+      "object_repr": "Товар Тестовый шашлык | Заказ № 278",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 325,
+   "fields": {
+      "action_time": "2024-07-06T12:57:13.284Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "397",
+      "object_repr": "Товар Борщ | Заказ № 278",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 326,
+   "fields": {
+      "action_time": "2024-07-06T12:57:13.389Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "396",
+      "object_repr": "Товар Борщ | Заказ № 277",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 327,
+   "fields": {
+      "action_time": "2024-07-06T12:57:13.514Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "395",
+      "object_repr": "Товар Тестовый шашлык | Заказ № 276",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 328,
+   "fields": {
+      "action_time": "2024-07-06T12:57:13.640Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "394",
+      "object_repr": "Товар Борщ | Заказ № 275",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 329,
+   "fields": {
+      "action_time": "2024-07-06T12:57:13.754Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "393",
+      "object_repr": "Товар Борщ | Заказ № 274",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 330,
+   "fields": {
+      "action_time": "2024-07-06T12:57:13.880Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "392",
+      "object_repr": "Товар Тестовый шашлык | Заказ № 273",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 331,
+   "fields": {
+      "action_time": "2024-07-06T12:57:14.013Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "391",
+      "object_repr": "Товар Борщ | Заказ № 272",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 332,
+   "fields": {
+      "action_time": "2024-07-06T12:57:14.139Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "390",
+      "object_repr": "Товар Борщ | Заказ № 271",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 333,
+   "fields": {
+      "action_time": "2024-07-06T12:57:14.288Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "388",
+      "object_repr": "Товар Тестовый шашлык | Заказ № 269",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 334,
+   "fields": {
+      "action_time": "2024-07-06T12:57:21.375Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "289",
+      "object_repr": "Заказ № 289 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 335,
+   "fields": {
+      "action_time": "2024-07-06T12:57:21.455Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "288",
+      "object_repr": "Заказ № 288 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 336,
+   "fields": {
+      "action_time": "2024-07-06T12:57:21.528Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "287",
+      "object_repr": "Заказ № 287 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 337,
+   "fields": {
+      "action_time": "2024-07-06T12:57:21.621Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "286",
+      "object_repr": "Заказ № 286 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 338,
+   "fields": {
+      "action_time": "2024-07-06T12:57:21.703Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "285",
+      "object_repr": "Заказ № 285 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 339,
+   "fields": {
+      "action_time": "2024-07-06T12:57:21.795Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "284",
+      "object_repr": "Заказ № 284 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 340,
+   "fields": {
+      "action_time": "2024-07-06T12:57:21.895Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "283",
+      "object_repr": "Заказ № 283 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 341,
+   "fields": {
+      "action_time": "2024-07-06T12:57:21.987Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "282",
+      "object_repr": "Заказ № 282 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 342,
+   "fields": {
+      "action_time": "2024-07-06T12:57:22.095Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "281",
+      "object_repr": "Заказ № 281 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 343,
+   "fields": {
+      "action_time": "2024-07-06T12:57:22.205Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "280",
+      "object_repr": "Заказ № 280 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 344,
+   "fields": {
+      "action_time": "2024-07-06T12:57:22.329Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "279",
+      "object_repr": "Заказ № 279 | Покупатель Назар Пащанин| Суммарная стоимость: 1001| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 345,
+   "fields": {
+      "action_time": "2024-07-06T12:57:22.445Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "278",
+      "object_repr": "Заказ № 278 | Покупатель Назар Пащанин| Суммарная стоимость: 1003| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 346,
+   "fields": {
+      "action_time": "2024-07-06T12:57:22.570Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "277",
+      "object_repr": "Заказ № 277 | Покупатель Назар Пащанин| Суммарная стоимость: 100| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 347,
+   "fields": {
+      "action_time": "2024-07-06T12:57:22.675Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "276",
+      "object_repr": "Заказ № 276 | Покупатель Назар Пащанин| Суммарная стоимость: 2| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 348,
+   "fields": {
+      "action_time": "2024-07-06T12:57:22.792Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "275",
+      "object_repr": "Заказ № 275 | Покупатель Назар Пащанин| Суммарная стоимость: 100| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 349,
+   "fields": {
+      "action_time": "2024-07-06T12:57:22.891Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "274",
+      "object_repr": "Заказ № 274 | Покупатель Назар Пащанин| Суммарная стоимость: 200| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 350,
+   "fields": {
+      "action_time": "2024-07-06T12:57:23.017Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "273",
+      "object_repr": "Заказ № 273 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 351,
+   "fields": {
+      "action_time": "2024-07-06T12:57:23.138Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "272",
+      "object_repr": "Заказ № 272 | Покупатель Назар Пащанин| Суммарная стоимость: 100| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 352,
+   "fields": {
+      "action_time": "2024-07-06T12:57:23.271Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "271",
+      "object_repr": "Заказ № 271 | Покупатель Назар Пащанин| Суммарная стоимость: 100| Оплачен False",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 353,
+   "fields": {
+      "action_time": "2024-07-06T12:57:23.395Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "269",
+      "object_repr": "Заказ № 269 | Покупатель Назар Пащанин| Суммарная стоимость: 1| Оплачен True",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
    "model": "auth.permission",
    "pk": 1,
    "fields": {
@@ -396,6 +4985,114 @@
    }
 },
 {
+   "model": "auth.permission",
+   "pk": 45,
+   "fields": {
+      "name": "Can add Уведомление об успешном платеже",
+      "content_type": 12,
+      "codename": "add_successnotification"
+   }
+},
+{
+   "model": "auth.permission",
+   "pk": 46,
+   "fields": {
+      "name": "Can change Уведомление об успешном платеже",
+      "content_type": 12,
+      "codename": "change_successnotification"
+   }
+},
+{
+   "model": "auth.permission",
+   "pk": 47,
+   "fields": {
+      "name": "Can delete Уведомление об успешном платеже",
+      "content_type": 12,
+      "codename": "delete_successnotification"
+   }
+},
+{
+   "model": "auth.permission",
+   "pk": 48,
+   "fields": {
+      "name": "Can view Уведомление об успешном платеже",
+      "content_type": 12,
+      "codename": "view_successnotification"
+   }
+},
+{
+   "model": "auth.permission",
+   "pk": 49,
+   "fields": {
+      "name": "Can add order count past",
+      "content_type": 13,
+      "codename": "add_ordercountpast"
+   }
+},
+{
+   "model": "auth.permission",
+   "pk": 50,
+   "fields": {
+      "name": "Can change order count past",
+      "content_type": 13,
+      "codename": "change_ordercountpast"
+   }
+},
+{
+   "model": "auth.permission",
+   "pk": 51,
+   "fields": {
+      "name": "Can delete order count past",
+      "content_type": 13,
+      "codename": "delete_ordercountpast"
+   }
+},
+{
+   "model": "auth.permission",
+   "pk": 52,
+   "fields": {
+      "name": "Can view order count past",
+      "content_type": 13,
+      "codename": "view_ordercountpast"
+   }
+},
+{
+   "model": "auth.permission",
+   "pk": 53,
+   "fields": {
+      "name": "Can add order boolean",
+      "content_type": 14,
+      "codename": "add_orderboolean"
+   }
+},
+{
+   "model": "auth.permission",
+   "pk": 54,
+   "fields": {
+      "name": "Can change order boolean",
+      "content_type": 14,
+      "codename": "change_orderboolean"
+   }
+},
+{
+   "model": "auth.permission",
+   "pk": 55,
+   "fields": {
+      "name": "Can delete order boolean",
+      "content_type": 14,
+      "codename": "delete_orderboolean"
+   }
+},
+{
+   "model": "auth.permission",
+   "pk": 56,
+   "fields": {
+      "name": "Can view order boolean",
+      "content_type": 14,
+      "codename": "view_orderboolean"
+   }
+},
+{
    "model": "contenttypes.contenttype",
    "pk": 1,
    "fields": {
@@ -481,6 +5178,201 @@
    "fields": {
       "app_label": "orders",
       "model": "order"
+   }
+},
+{
+   "model": "contenttypes.contenttype",
+   "pk": 12,
+   "fields": {
+      "app_label": "robokassa",
+      "model": "successnotification"
+   }
+},
+{
+   "model": "contenttypes.contenttype",
+   "pk": 13,
+   "fields": {
+      "app_label": "orders",
+      "model": "ordercountpast"
+   }
+},
+{
+   "model": "contenttypes.contenttype",
+   "pk": 14,
+   "fields": {
+      "app_label": "orders",
+      "model": "orderboolean"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "1bz1h2qiyljzglrkoub0xd7b95p3svo6",
+   "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSHAyAAu3fsNhMcgVQNJaVfGf7dNutDtPefcN_NhXapfB81-yuzCJDv9bjGkJ7Ud5Edo985Tb8s8Rb4r_KCD33qm1_Vw_w5qGHWrLWqhSUmldDLgXHGCksaYChlJwQLorNEItCABNwUNSqvAiILngIZ9vrLSNjw:1sPoPH:OAY-xLyA71ANTP_hUthl7kNdJ3re7yAhRVecTrkjl7U",
+      "expire_date": "2024-07-19T19:15:43.837Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "1c5agetj6tdribuy9x5vvvcbzhi2x7f5",
+   "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSHAyAAu3fsNhMcgVQNJaVfGf7dNutDtPefcN_NhXapfB81-yuzCJDv9bjGkJ7Ud5Edo985Tb8s8Rb4r_KCD33qm1_Vw_w5qGHWrLWqhSUmldDLgXHGCksaYChlJwQLorNEItCABNwUNSqvAiILngIZ9vrLSNjw:1s9A7J:bW2zlpVGZPtHT1AZYFVxppKQCAbtr65Yy8K-hDFVMZo",
+      "expire_date": "2024-06-03T21:00:21.719Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "hxi8o66cdyh9dn1ah4sespgj84r4jff9",
+   "fields": {
+      "session_data": "e30:1sGbdS:-Ne-yQGztxqaA0sM2dmq5WVM-uAe4vYjbmOwi-NPiqo",
+      "expire_date": "2024-06-24T09:48:18.187Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "j9zd8yinb8ih1xgjgjjb6jjr7pdiivze",
+   "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSHAyAAu3fsNhMcgVQNJaVfGf7dNutDtPefcN_NhXapfB81-yuzCJDv9bjGkJ7Ud5Edo985Tb8s8Rb4r_KCD33qm1_Vw_w5qGHWrLWqhSUmldDLgXHGCksaYChlJwQLorNEItCABNwUNSqvAiILngIZ9vrLSNjw:1rqFj2:sq46WQGNdnJEcyf-8UI_rHy0AuK_KOm7z2DeTDznR3k",
+      "expire_date": "2024-04-12T17:09:08.332Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "ov0m4959hux4dpx9a85f02j53jyl4uqf",
+   "fields": {
+      "session_data": "e30:1sGbd1:gd6AGxUL0cfRS9d-IA2B2plHrgF8ifLJKrQo-lLdeI4",
+      "expire_date": "2024-06-24T09:47:51.449Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "qhjlidk0c53gaoz5fx8039xd7accusep",
+   "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSHAyAAu3fsNhMcgVQNJaVfGf7dNutDtPefcN_NhXapfB81-yuzCJDv9bjGkJ7Ud5Edo985Tb8s8Rb4r_KCD33qm1_Vw_w5qGHWrLWqhSUmldDLgXHGCksaYChlJwQLorNEItCABNwUNSqvAiILngIZ9vrLSNjw:1s5OEh:euU_HEQ5p_EH93oiadVl2WrbxwAJRASbfS7ozj8DSgI",
+      "expire_date": "2024-05-24T11:16:23.385Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "sdonvu8dhn2tw0uzkofzrz5y98mgcpzg",
+   "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSHAyAAu3fsNhMcgVQNJaVfGf7dNutDtPefcN_NhXapfB81-yuzCJDv9bjGkJ7Ud5Edo985Tb8s8Rb4r_KCD33qm1_Vw_w5qGHWrLWqhSUmldDLgXHGCksaYChlJwQLorNEItCABNwUNSqvAiILngIZ9vrLSNjw:1rzGhi:AD5jXxTCSYRhICjljZQd1H1XMGiJwEF5Y1VIQPOLh2A",
+      "expire_date": "2024-05-07T14:01:02.411Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "svly2xmzbl7ialkvrhnf7335joanddye",
+   "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSHAyAAu3fsNhMcgVQNJaVfGf7dNutDtPefcN_NhXapfB81-yuzCJDv9bjGkJ7Ud5Edo985Tb8s8Rb4r_KCD33qm1_Vw_w5qGHWrLWqhSUmldDLgXHGCksaYChlJwQLorNEItCABNwUNSqvAiILngIZ9vrLSNjw:1sGQlm:jR4w9kH2FpIiqPSzbqWZjFSYRlP-3is-xmvdUAHoEpQ",
+      "expire_date": "2024-06-23T22:12:10.696Z"
+   }
+},
+{
+   "model": "sessions.session",
+   "pk": "tr8erq3li2x7k6w2y3pumb58gbbori0m",
+   "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSHAyAAu3fsNhMcgVQNJaVfGf7dNutDtPefcN_NhXapfB81-yuzCJDv9bjGkJ7Ud5Edo985Tb8s8Rb4r_KCD33qm1_Vw_w5qGHWrLWqhSUmldDLgXHGCksaYChlJwQLorNEItCABNwUNSqvAiILngIZ9vrLSNjw:1sKdGb:9qMm_j8pHbakP7lDtRCFdloZccxw-KMY6wjLe_WrGBM",
+      "expire_date": "2024-07-05T12:21:21.351Z"
+   }
+},
+{
+   "model": "products.productcategory",
+   "pk": 1,
+   "fields": {
+      "name": "Все",
+      "description": "",
+      "slug": "vse"
+   }
+},
+{
+   "model": "products.productcategory",
+   "pk": 2,
+   "fields": {
+      "name": "Блюда на мангале",
+      "description": "авав",
+      "slug": "blyuda-na-mangale"
+   }
+},
+{
+   "model": "products.productcategory",
+   "pk": 3,
+   "fields": {
+      "name": "Супы",
+      "description": "супы",
+      "slug": "supy"
+   }
+},
+{
+   "model": "products.product",
+   "pk": 1,
+   "fields": {
+      "name": "Тестовый шашлык",
+      "slug": "testovyj-shashlyk",
+      "description": "авав",
+      "price": "1",
+      "weight": "100",
+      "min_quantity_by_weight": "300",
+      "number_of_pieces": 0,
+      "on_or_off": true,
+      "image": "products_images/1617223303_12-p-garniri-dlya-vtorikh-blyud-krasivo-18.jpg",
+      "category": 2
+   }
+},
+{
+   "model": "products.product",
+   "pk": 2,
+   "fields": {
+      "name": "Борщ",
+      "slug": "borsh",
+      "description": "апавпп",
+      "price": "100",
+      "weight": "1",
+      "min_quantity_by_weight": "1",
+      "number_of_pieces": 1,
+      "on_or_off": true,
+      "image": "products_images/cb9c411a9e69a1df7fc51f6300bcdaf4.jpg",
+      "category": 3
+   }
+},
+{
+   "model": "users.user",
+   "pk": 1,
+   "fields": {
+      "password": "pbkdf2_sha256$720000$2q3lL4zgRFfeuegySMUtux$f2HKLzy4lpCR8sfIFZACRUKyppBFULu3pkxm71C31Nc=",
+      "last_login": "2024-07-05T19:15:43.747Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "Назар",
+      "last_name": "Пащанин",
+      "email": "naz.psh@mail.ru",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-03-13T15:34:16Z",
+      "phone_number": "+79159533544",
+      "loyalty_program": 17804,
+      "groups": [],
+      "user_permissions": []
+   }
+},
+{
+   "model": "users.user",
+   "pk": 2,
+   "fields": {
+      "password": "pbkdf2_sha256$720000$2q3lL4zgRFfeuegySMUtux$f2HKLzy4lpCR8sfIFZACRUKyppBFULu3pkxm71C31Nc=",
+      "last_login": "2024-06-09T22:12:32Z",
+      "is_superuser": false,
+      "username": "Nikralet",
+      "first_name": "Назар",
+      "last_name": "Пащанин",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-05-16T10:35:15Z",
+      "phone_number": "+79159533546",
+      "loyalty_program": 0,
+      "groups": [],
+      "user_permissions": []
    }
 }
 ]
