@@ -1,5 +1,4 @@
 from django.contrib import admin
-from django.contrib.auth.hashers import make_password
 
 from orders.admin import OrderTabulareAdmin
 
@@ -7,7 +6,6 @@ from users.models import User
 from products.admin import BasketAdmin
 from django.contrib.auth.admin import UserAdmin
 from django.db.models import QuerySet
-# admin.site.register(User, UserAdmin)
 
 
 @admin.register(User)
