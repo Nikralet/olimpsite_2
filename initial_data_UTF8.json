@@ -4654,6 +4654,32 @@
    }
 },
 {
+   "model": "admin.logentry",
+   "pk": 359,
+   "fields": {
+      "action_time": "2024-07-06T13:34:28.818Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "admin",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u043e\\u043c\\u0435\\u0440 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\\u0430\"]}}]"
+   }
+},
+{
+   "model": "admin.logentry",
+   "pk": 360,
+   "fields": {
+      "action_time": "2024-07-06T13:34:49.001Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Nikralet",
+      "action_flag": 3,
+      "change_message": ""
+   }
+},
+{
    "model": "auth.permission",
    "pk": 1,
    "fields": {
@@ -5346,7 +5372,7 @@
    "pk": 1,
    "fields": {
       "password": "pbkdf2_sha256$720000$2q3lL4zgRFfeuegySMUtux$f2HKLzy4lpCR8sfIFZACRUKyppBFULu3pkxm71C31Nc=",
-      "last_login": "2024-07-05T19:15:43.747Z",
+      "last_login": "2024-07-05T19:15:43Z",
       "is_superuser": true,
       "username": "admin",
       "first_name": "Назар",
@@ -5355,28 +5381,8 @@
       "is_staff": true,
       "is_active": true,
       "date_joined": "2024-03-13T15:34:16Z",
-      "phone_number": "+79159533544",
+      "phone_number": "",
       "loyalty_program": 17804,
-      "groups": [],
-      "user_permissions": []
-   }
-},
-{
-   "model": "users.user",
-   "pk": 2,
-   "fields": {
-      "password": "pbkdf2_sha256$720000$2q3lL4zgRFfeuegySMUtux$f2HKLzy4lpCR8sfIFZACRUKyppBFULu3pkxm71C31Nc=",
-      "last_login": "2024-06-09T22:12:32Z",
-      "is_superuser": false,
-      "username": "Nikralet",
-      "first_name": "Назар",
-      "last_name": "Пащанин",
-      "email": "",
-      "is_staff": false,
-      "is_active": true,
-      "date_joined": "2024-05-16T10:35:15Z",
-      "phone_number": "+79159533546",
-      "loyalty_program": 0,
       "groups": [],
       "user_permissions": []
    }
