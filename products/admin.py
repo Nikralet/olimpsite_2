@@ -20,7 +20,7 @@ class ProductAdmin(admin.ModelAdmin):
     @admin.action(description='Включение всех продуктов')
     def on(self, request, qs: QuerySet):
         qs.update(on_or_off=True)
-        
+
     @admin.action(description='Выключение всех продуктов')
     def off(self, request, qs: QuerySet):
         qs.update(on_or_off=False)

@@ -70,7 +70,6 @@ def the_amount_of_the_users_purchases(user):  # функция считываю�
 @register.simple_tag()
 def order_amount(user):
     orders = Order.objects.filter(user=user).filter(is_paid=True)
-    #print(orders)
     result = OrderItem.objects.filter(order=orders[len(orders)-1]).in_bulk()
     total_price = []
     for j in range(min(result), max(result) + 1):
@@ -90,11 +89,10 @@ def adding_points_for_purchases(user):  # пример функции измен
     theamountoftheuserspurchases = the_amount_of_the_users_purchases(user)
     orderamount = order_amount(user)
     point = User.objects.get(id=user.id)
-
-    if theamountoftheuserspurchases + orderamount > summ1:
+    if theamountoftheuserspurchases > summ1:
         point.loyalty_program += int(orderamount * decimal.Decimal(koef2))
         point.save()
-    elif theamountoftheuserspurchases + orderamount > summ0:
+    elif theamountoftheuserspurchases >= summ0:
         point.loyalty_program += int(orderamount * decimal.Decimal(koef1))
         point.save()
     #print(orderamount)
