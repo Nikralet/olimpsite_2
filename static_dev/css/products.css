@@ -109,8 +109,17 @@
         border-bottom: 1px solid rgb(92 57 27) !important;
     }
 }
-#page_link {
-        color: white !important;
+#page_link1 {
+    text-decoration: underline;
+    color: white !important;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+#page_link2 {
+    color: white !important;
     text-shadow:
         -1px -1px 0 #000,
         1px -1px 0 #000,

@@ -123,9 +123,15 @@
                 {% endif %}
                 {% for page in products.paginator.page_range %}
                 <li class="page-item">
-                    <a class="page-link" id="page_link" href="{% url 'products:paginator' page %}">
-                        {{page}}
-                    </a>
+                    {% if products.number == page %}
+                        <a class="page-link" id="page_link1" href="{% url 'products:paginator' page %}">
+                                    {{ page }}
+                        </a>
+                    {% else %}
+                        <a class="page-link" id="page_link2" href="{% url 'products:paginator' page %}">
+                                    {{ page }}
+                        </a>
+                    {% endif %}
                 </li>
                 {% endfor %}
                 {% if products.has_next %}
