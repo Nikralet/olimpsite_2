@@ -72,7 +72,7 @@ def products(request, category_id=1, page_number=1):
     else:
         products = Product.objects.all().filter(on_or_off=True)
 
-    per_page = 6
+    per_page = 9
     paginator = Paginator(products, per_page)
     products_paginator = paginator.page(page_number)
 

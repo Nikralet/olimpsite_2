@@ -113,12 +113,14 @@
 
         <nav aria-label="Page navigation example ">
             <ul class="pagination justify-content-center">
+                {% if products.has_previous %}
                 <li class="page-item {% if not products.has_previous %} disabled {% endif %}">
                     <a class="page-link"
                        href="{% if products.has_previous %} {% url 'products:paginator' products.previous_page_number %} {% else %} # {% endif %}"
-                       tabindex="-1" aria-disabled="true" id="pred">Предыдущая
+                       tabindex="-1" aria-disabled="true" id="pred">❮
                     </a>
                 </li>
+                {% endif %}
                 {% for page in products.paginator.page_range %}
                 <li class="page-item">
                     <a class="page-link" href="{% url 'products:paginator' page %}">
@@ -126,12 +128,14 @@
                     </a>
                 </li>
                 {% endfor %}
+                {% if products.has_next %}
                 <li class="page-item {% if not products.has_next %} disabled {% endif %}">
                     <a class="page-link"
                        href="{% if products.has_next %} {% url 'products:paginator' products.next_page_number %} {% else %} # {% endif %}"
-                       id="sled">Следующая
+                       id="sled">❯
                     </a>
                 </li>
+                {% endif %}
             </ul>
         </nav>
 
