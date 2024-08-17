@@ -109,3 +109,11 @@
         border-bottom: 1px solid rgb(92 57 27) !important;
     }
 }
+#page_link {
+        color: white !important;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
